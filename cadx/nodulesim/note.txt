@@ -1,0 +1,16 @@
+Jay,
+
+I have forwarded on an email message to you (see below) that contains some documentation from Jim Sehnert on the nodule simulation algorithm.
+
+Images need to be in exposure space (not log exposure). The RAW files we have been using for the CAD project are in log exposure space. The equation should be used for the log to linear conversion is:
+
+CV_lin = pow(10, (CV_log/1000) - 4) * 65535
+
+This could be inverted for the linear to log conversion.
+
+Basically I envision you writing an application to read in a DICOM format log-exposure image, apply a log->linear conversion, add a nodule using Jim's code and then apply a linear->log conversion to finally write out s DICOM format log-exposure image.  You can look at the "FeatureInformation.txt" file that is attached to see the parameters that specify the simulation to perform. Jim suggested changing the FEATURE_THICKNESS_MM parameter to 15 mm at first to make sure was can see the nodules, then we can back off the thickness to get more subtle nodules.
+
+I will place the code out on hydra in your schildkraut directory.
+
+See you tomorrow.
+

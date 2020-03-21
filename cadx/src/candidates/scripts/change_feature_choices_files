@@ -1,0 +1,23 @@
+#!/bin/tcsh
+#
+# change_feature_choices_files : Create new .can files with a subset of the features
+#                                in the input .can files, for a directory
+#                                of input .can files.
+#
+# usage:
+# change_feature_choices in_directory out_directory new_feature_count new_feature_list
+#
+# Remember to protect new_feature_list with quotes!
+#
+# This script runs change_feature_choices on all can files in directory in_directory,
+# placing the output of each run in out_directory. See change_feature_choices for
+# more information.
+#
+
+foreach i ( $1/*.can )
+
+echo $i 
+change_feature_choices $i $3 "$4" > $2/`basename $i`
+
+
+end

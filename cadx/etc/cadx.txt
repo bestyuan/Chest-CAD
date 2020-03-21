@@ -1,0 +1,410 @@
+
+
+
+
+CalcFeatures -i J:/image/CADX/test0/Images/EK0002_0_PA_P_CR400_CO.img -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0002_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0002_0_PA_P_CR400.png -outputDir Q:/schildkr/cadx/test/tmp 
+
+
+CalcFeatures -i J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0003_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0003_0_PA_P_CR400.png -outputDir Q:/schildkr/cadx/test/tmp  
+
+MakeTemplate -size 32 -sigma 10.0 -amp 4095 -o h:/schildkr/template_sigma_10.tif 
+MakeTemplate -size 64 -sigma 20.0 -amp 4095 -o h:/schildkr/template_sigma_20.tif 
+MakeTemplate -size 64 -sigma 40.0 -amp 4095 -o h:/schildkr/template_sigma_40.tif    
+MakeTemplate -size 128 -sigma 80.0 -amp 4095 -o h:/schildkr/template_sigma_80.tif   
+
+
+FeatureAnalysis -canFileList ../etc/nodule.lst -canFileDir Q:/schildkr/cadx/test/tmp -hitFileDir J:/image/CADX/test0/GroundTruth -o Q:/schildkr/cadx/test/results/cadx_5_22_2003.res    
+
+FeatureAnalysis -canFileList ../etc/can.lst -canFileDir Q:/schildkr/cadx/test/tmp -hitFileDir J:/image/CADX/test0/GroundTruth -o Q:/schildkr/cadx/test/results/cadx_can_5_23_2003.res     
+
+FeatureAnalysis -canFileList Q:/schildkr/cadx/test/tmp/Candidates.lst -o Q:/schildkr/cadx/test/results/cadx.res   
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0.lst -o Q:/schildkr/cadx/test/results/CalcFeatures_5_26_2003.res    
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0.lst -o Q:/schildkr/cadx/test/results/FeatureAnalysis_5_26_2003.res        
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_select.lst -o Q:/schildkr/cadx/test/results/CalcFeatures_5_30_2003.res  
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_select.lst -o Q:/schildkr/cadx/test/results/FeatureAnalysis_5_30_2003.res 
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_select.lst -o Q:/schildkr/cadx/test/results/CalcFeatures_6_2_2003.res      
+                                                         
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_select.lst -o Q:/schildkr/cadx/test/results/FeatureAnalysis_6_2_2003.res  
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_2b_2003.log      
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -o Q:/schildkr/cadx/test/results/test0_can_select_6_2b_2003.res   
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_3_2003.log -hitsFirst  
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -o Q:/schildkr/cadx/test/results/test0_can_select_6_3_2003.res 
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_3_2003.log -candidatesFromHitFile   
+
+
+
+MakeTemplate -size 64 -sigma 40.0 -amp 4095 -o h:/schildkr/template_sigma_40_dir.tif
+
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_4_2003.log -hitsFirst   
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_can_select.lst -o Q:/schildkr/cadx/test/results/test0_can_select_6_4_2003.res 
+
+
+Features -parm ../data/parm/cadx.parm -list ../etc/test0_can.lst -log Q:/schildkr/cadx/test/results/test0_can_6_5_2003.log -hitsFirst   
+
+FeatureAnalysis -parm ../data/parm/cadx.parm -list ../etc/test0_can.lst -o Q:/schildkr/cadx/test/results/test0_can_6_5_2003.stat     
+
+
+Features -parm ../data/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_6_6_2003.log -candidatesFromHitFile      
+
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0028_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/test0.log -outCan Q:/schildkr/cadx/test/tmp/EK0028_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_2_2003/EK0028_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0028_0_PA_P_CR400_CO.hit -hit J:/image/CADX/lungMasks/EK0028_0_PA_P_CR400.hit  -hitsFirst 
+
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0002_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/tmp/EK0002_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_2_2003/EK0002_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -hitsFirst 
+
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -img J:/image/CADX/test0/Images/EK0023_0_PA_P_CR400_CO.img -outCan Q:/schildkr/cadx/test/can/EK0023_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0023_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0023_0_PA_P_CR400_CO.hit -log Q:/schildkr/cadx/test/tmp/cadx.log -candidatesFromHitFile  
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -img J:/image/CADX/test0/Images/EK0040_0_PA_P_CR400_CO.img -outCan Q:/schildkr/cadx/test/can/EK0040_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0040_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0040_0_PA_P_CR400_CO.hit -log Q:/schildkr/cadx/test/tmp/cadx.log -candidatesFromHitFile  
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -img J:/image/CADX/test0/Images/EK0002_0_PA_P_CR400_CO.img -outCan Q:/schildkr/cadx/test/can/EK0002_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0002_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -log Q:/schildkr/cadx/test/tmp/cadx.log -candidatesFromHitFile  
+
+Features -parm ../data/cadx.parm -list ../etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_7_2003.log -candidatesFromHitFile   
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_12_2003.log -hitsFirst   
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -o Q:/schildkr/cadx/test/results/test0_can_select_6_12_2003.stat     
+
+                                                         
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can.lst -log Q:/schildkr/cadx/test/results/test0_can_6_12_2003.log -hitsFirst   
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can.lst -o Q:/schildkr/cadx/test/results/test0_can_6_12_2003.stat   
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_16_2003.log -candidatesFromHitFile   
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -log Q:/schildkr/cadx/test/results/test0_can_select_6_20_2003.log -hitsFirst  
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -o Q:/schildkr/cadx/test/results/test0_can_6_20_2003.stat -plot Q:/schildkr/cadx/test/results/test0_can_6_20_2003.plot
+
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0002_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0002_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0002_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0003_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0003_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0052_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0052_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0052_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0052_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0040_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0040_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0040_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0040_0_PA_P_CR400_CO.hit -candidatesFromHitFile 
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0035_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0035_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0035_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0035_0_PA_P_CR400_CO.hit -hitsFirst  
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0031_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test/results/cadx.log -outCan Q:/schildkr/cadx/test/can/EK0031_0_PA_P_CR400_CO.can -inCan Q:/schildkr/cadx/test/can_6_11b_2003/EK0031_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0031_0_PA_P_CR400_CO.hit -hitsFirst -onlyCandidate 22
+
+
+***********TEST0********************
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -log h:/schildkr/cadx.log -outCan Q:/schildkr/cadx/test0/can/EK0003_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -candidatesFromHitFile  
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0066_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test0/results/cadx.log -outCan Q:/schildkr/cadx/test0/can/EK0066_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0066_0_PA_P_CR400_CO.hit -candidatesFromHitFile 
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/test0/results/cadx.log -outCan Q:/schildkr/cadx/test0/can/EK0003_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -candidatesFromHitFile
+
+CalcFeaturesApp -parm ../data/cadx.parm -img J:/image/CADX/test0/Images/EK0015_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/tmp/cadx.log -outCan Q:/schildkr/cadx/test0/can/EK0015_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0086_0_PA_P_CR400_CO.img -log h:/schildkr/cadx.log -inCan Q:/schildkr/cadx/test0/can_6_24_2003/EK0086_0_PA_P_CR400_CO.can -outCan Q:/schildkr/cadx/test0/can/EK0086_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0086_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can_select.lst -log Q:/schildkr/cadx/test0/results/test0_can_8_14_2003.log -candidatesFromHitFile 
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can.lst -log Q:/schildkr/cadx/test0/results/test0_can_8_6_2003.log -hitsFirst
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test0_can.lst -o Q:/schildkr/cadx/test0/results/test0_can_8_6_2003.stat -plot Q:/schildkr/cadx/test0/results/test0_can_8_6_2003.plot
+
+***********TEST2********************
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test2_can.lst -log Q:/schildkr/cadx/test2/results/test2_can_7_24b_2003.log -candidatesFromHitFile
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test2_can.lst -o Q:/schildkr/cadx/test2/results/test2_can_7_24b_2003.stat -plot Q:/schildkr/cadx/test2/results/test2_can_7_24b_2003.plot
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/test2_short.lst -log Q:/schildkr/cadx/test2/results/test2_can_7_24_2003.log -candidatesFromHitFile
+
+
+***********setA********************
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0015_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/tmp/cadx.log -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0015_0_PA_P_CR400_CO.can -outCan Q:/schildkr/cadx/setA/outcan/EK0015_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -hitsFirst 
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/tmp/cadx.log -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0003_0_PA_P_CR400_CO.can -outCan Q:/schildkr/cadx/setA/outcan/EK0003_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -hitsFirst
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/tmp/cadx.log -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0003_0_PA_P_CR400_CO.can -outCan Q:/schildkr/cadx/setA/outcan/EK0003_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -hitsFirst
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img J:/image/CADX/test0/Images/EK0086_0_PA_P_CR400_CO.img -log Q:/schildkr/cadx/tmp/cadx.log -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0086_0_PA_P_CR400_CO.can -outCan Q:/schildkr/cadx/setA/outcan/EK0086_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0086_0_PA_P_CR400_CO.hit -candidatesFromHitFile 
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -log Q:/schildkr/cadx/setA/results/setA_9_2_2003.log -candidatesFromHitFile
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -o Q:/schildkr/cadx/setA/results/setA_9_2_2003.stat -plot Q:/schildkr/cadx/setA/results/setA_9_2_2003.plot
+
+
+
+CalcFeaturesApp -parm ../data/cadx2.parm -img Q:/schildkr/cadx/images/test1.tif -log Q:/schildkr/cadx/images/test1.log -outCan Q:/schildkr/cadx/images/test1.can -hit Q:/schildkr/cadx/images/test1.hit -candidatesFromHitFile 
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0003_0_PA_P_CR400_CO.can -log Q:/schildkr/cadx/tmp/cadx.log -outCan Q:/schildkr/cadx/setA/outcan/EK0003_0_PA_P_CR400_CO.can -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -hitsFirst
+
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -log Q:/schildkr/cadx/setA/results/setA_9_16c_2003.log -hitsFirst
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -o Q:/schildkr/cadx/setA/results/setA_9_16c_2003.stat -plot Q:/schildkr/cadx/setA/results/setA_9_16c_2003.plot
+
+\\hydra.kp.kodak.com\projects\chestCad
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -log Q:/schildkr/cadx/setA/results/setA_9_17f_2003.log -hitsFirst
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -o Q:/schildkr/cadx/setA/results/setA_9_17f_2003.stat -plot Q:/schildkr/cadx/setA/results/setA_9_17f_2003.plot
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/jsrt.lst -log Q:/schildkr/cadx/jsrt/results/jsrt_9_17f_2003.log -candidatesFromHitFile
+
+FeatureAnalysis -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/etc/setA.lst -o Q:/schildkr/cadx/jsrt/results/jsrt_9_17f_2003.stat -plot Q:/schildkr/cadx/jsrt/results/jsrt_9_17f_2003.plot
+
+**************setA*********************
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img Q:/schildkr/cadx/setA/Images/EK0003_0_PA_P_CR400_CO.img -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0003_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan Q:/schildkr/cadx/setA/outcan/EK0003_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -hitsFirst
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img Q:/schildkr/cadx/setA/images/EK0015_0_PA_P_CR400_CO.img -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/EK0015_0_PA_P_CR400_CO.can -log Q:/schildkr/cadx/tmp/cadx.log -outCan Q:/schildkr/cadx/setA/outcan/EK0015_0_PA_P_CR400_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -hitsFirst
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img J:/image/CADX/test2/Images/TGH-EK0133_CO.img -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/TGH-EK0133_CO.can -log h:/schildkr/cadx.log -outCan Q:/schildkr/cadx/setA/outcan/TGH-EK0133_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/TGH-EK0133_CO.hit -hitsFirst
+
+CalcFeaturesApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -img J:/image/CADX/test2/Images/TGH-EK0141_CO.img -inCan Q:/schildkr/cadx/setA/CanFileFromJuly2003Test/TGH-EK0141_CO.can -log h:/schildkr/cadx.log -outCan Q:/schildkr/cadx/setA/outcan/TGH-EK0141_CO.can -hit Q:/schildkr/cadx/setA/GroundTruth/TGH-EK0141_CO.hit -hitsFirst
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -log Q:/schildkr/cadx/setA/results/setA_9_23b_2003.log -imgDir Q:/schildkr/cadx/setA/images -inCanDir Q:/schildkr/cadx/setA/CanFileFromJuly2003Test -outCanDir Q:/schildkr/cadx/setA/outcan -hitDir Q:/schildkr/cadx/setA/GroundTruth -candidatesFromHitFile
+
+FeatureAnalysisApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -canDir Q:/schildkr/cadx/setA/outcan -hitDir Q:/schildkr/cadx/setA/GroundTruth -o Q:/schildkr/cadx/setA/results/setA_9_23b_2003.stat -plot Q:/schildkr/cadx/setA/results/setA_9_23b_2003.plot
+
+RoiAnalysisApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -imgDir Q:/schildkr/cadx/setA/images -canDir Q:/schildkr/cadx/setA/outcan_10_4a_2003 -hitDir Q:/schildkr/cadx/setA/GroundTruth -outDir h:/schildkr -featureName Gradient.quality -testCondition ge -featureThreshold 10
+
+MakeFTRApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -imgDir Q:/schildkr/cadx/setA/images -canDir Q:/schildkr/cadx/setA/outcan_10_4a_2003 -hitDir Q:/schildkr/cadx/setA/GroundTruth -outFile h:/schildkr/test.ftr
+
+LVQ -ftr Q:/schildkr/cadx/setA/outcan_10_4a_2003/outcan_10_4a_2003.ftr 
+
+PorcessApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -i Q:/schildkr/cadx/setA/images/EK0002_0_PA_P_CR400_CO.img -o Q:/schildkr/cadx/setA/morphprocessed1/EK0002_0_PA_P_CR400_CO.tif -noduleIndex 1
+
+RoiAnalysisApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -imgDir Q:/schildkr/cadx/setA/images -canDir Q:/schildkr/cadx/setA/outcan_10_4a_2003 -hitDir Q:/schildkr/cadx/setA/GroundTruth -outDir h:/schildkr -featureName Dif.avgCodeValue -testCondition ge  -featureThreshold 60
+
+**************jsrt*********************
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/jsrt.lst -log Q:/schildkr/cadx/jsrt/results/jsrt_9_22a_2003.log -imgDir Q:/schildkr/cadx/jsrt/images -inCanDir Q:/schildkr/cadx/jsrt/can -outCanDir Q:/schildkr/cadx/jsrt/outcan -hitDir Q:/schildkr/cadx/jsrt/GroundTruth -candidatesFromHitFile
+
+FeatureAnalysisApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/jsrt.lst -canDir Q:/schildkr/cadx/jsrt/outcan -hitDir Q:/schildkr/cadx/jsrt/GroundTruth -o Q:/schildkr/cadx/jsrt/results/jsrt_9_22a_2003.stat -plot Q:/schildkr/cadx/jsrt/results/jsrt_9_22a_2003.plot -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm
+
+
+
+CalcFeaturesListApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -log Q:/schildkr/cadx/setA/results/setA_11_14_2003.log -imgDir Q:/schildkr/cadx/setA/images -inCanDir Q:/schildkr/cadx/setA/CanFileFromJuly2003Test -outCanDir Q:/schildkr/cadx/setA/outcan -hitDir Q:/schildkr/cadx/setA/GroundTruth
+
+FeatureAnalysisApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -canDir Q:/schildkr/cadx/setA/outcan -hitDir Q:/schildkr/cadx/setA/GroundTruth -o Q:/schildkr/cadx/setA/results/setA_11_14_2003.stat -plot Q:/schildkr/cadx/setA/results/setA_11_14_2003.plot
+
+
+LVQ -ftr Q:/schildkr/cadx/setA/outcan_10_4a_2003/outcan_10_4a_2003.ftr 
+LVQ -ftr M:/schildkr_CADX/ISTL/cadx/etc/LVQtest_11_20_03.ftr 
+
+MakeFTRApp -parm M:/schildkr_CADX/ISTL/cadx/data/cadx2.parm -list M:/schildkr_CADX/ISTL/cadx/lst/setA.lst -imgDir Q:/schildkr/cadx/setA/images -canDir Q:/schildkr/cadx/setA/outcan_11_20_2003 -hitDir Q:/schildkr/cadx/setA/GroundTruth -outFile Q:/schildkr/cadx/setA/outcan_11_20_2003/setA_11_20_2003.ftr
+
+LVQ -ftr Q:/schildkr/cadx/setA/outcan_11_20_2003/setA_11_20_2003.ftr
+
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3_test.parm -img Q:/schildkr/cadx/targets/target1.tif -mask Q:/schildkr/cadx/targets/target1_mask.tif -inCan Q:/schildkr/cadx/targets/target1.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0003_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0003_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0003_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0002_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0002_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0002_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0015_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0015_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0015_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0023_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0023_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0023_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0023_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0041_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0041_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0041_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0041_0_PA_P_CR400_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/TGH-EK0189_CO.img -hit L:/image/CADX/testAll/GroundTruth/TGH-EK0189_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/TGH-EK0189_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/TGH-EK0189_CO.can -log h:/schildkr/cadx.log -outCan h:/schildkr/cadx.can
+
+CalcFeaturesListApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -list V:/schildkr_CADX/ISTL/cadx/lst/short.lst -log h:/schildkr/cadx.log -imgDir L:/image/CADX/testAll/Images -inCanDir Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks -outCanDir h:/schildkr -hitDir L:/image/CADX/testAll/GroundTruth -maskDir Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN007_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN007_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN007_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN007_CO.can -log c:/cadx/can/text/cadx.log -outCan c:/cadx/can/cadx.can
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN055_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN055_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN055_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN055_CO.can -log c:/cadx/can/text/cadx.log -outCan c:/cadx/can/cadx.can -onlyCandidate 43
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img L:/image/CADX/testAll/Images/EK0003_0_PA_P_CR400_CO.img -hit L:/image/CADX/testAll/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask Q:/schildkr/cadx/testAll/IntermediateResults/LungSegmentation_hand/EK0003_0_PA_P_CR400_CO.tif -inCan Q:/schildkr/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0003_0_PA_P_CR400_CO.can -log c:/cadx/can/text/cadx.log -outCan h:/schildkr/cadx.can -onlyCandidate 0
+
+
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN074_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN074_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN074_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN074_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN021_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN021_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN021_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN021_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN028_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN028_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN028_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN028_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN035_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN035_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN035_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN035_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN017_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN017_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN017_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN017_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN031_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN031_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN031_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN031_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN143_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN143_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN143_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN143_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can
+CalcFeaturesApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -img O:/cadx/JSRT/Images/JPCLN008_CO.img -hit Q:/schildkr/cadx/JSRT/GroundTruth/JPCLN008_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_hand/16x/JPCLN008_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN008_CO.can -log c:/cadx/cadx.log -outCan c:/cadx/cadx.can -onlyCandidate 34
+
+
+CalcFeaturesListApp -minProbability 100 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -log Q:/schildkr/cadx/setB/run/setB.log -imgDir L:/image/CADX/testAll/Images -inCanDir Q:/schildkr/cadx/setB/run_3_12_2004/March122004_SetB_MLM_CanFiles_with_probability_try1 -outDir Q:/schildkr/cadx/setB/run -hitDir L:/image/CADX/testAll/GroundTruth -maskDir O:/cadx/testAll/IntermediateResults/LungSegmentation_hand
+
+Annotator -minProbability 100 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx3.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -imgDir L:/image/CADX/testAll/Images -inCanDir Q:/schildkr/cadx/setB/run_3_12_2004/March122004_SetB_MLM_CanFiles_with_probability_try1 -outDir c:/cadx -hitDir L:/image/CADX/testAll/GroundTruth -maskDir O:/cadx/testAll/IntermediateResults/LungSegmentation_hand
+
+
+CalcFeaturesApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN008_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN065_CO.hit -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN065_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN065_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can -onlyCandidate 7
+CalcFeaturesApp -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN080_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN080_CO.hit -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN080_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN080_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN137_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN137_CO.hit -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN137_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040227/JPCLN137_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+
+
+CalcFeaturesApp -onlyCandidate 9 -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation/EK0015_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0015_0_PA_P_CR400_CO.tif -inCan O:/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/EK0015_0_PA_P_CR400_CO.can -outDir Q:/schildkr/cadx/setB/run -outCan Q:/schildkr/cadx/setB/run/cadx.can
+CalcFeaturesApp -onlyCandidate 24 -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation/TGH-EK0208_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/TGH-EK0208_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/TGH-EK0208_CO.tif -inCan O:/cadx/testAll/IntermediateResults/initial_candidates_hand_masks/TGH-EK0208_CO.can -outDir Q:/schildkr/cadx/setB/run -outCan Q:/schildkr/cadx/setB/run/cadx.can
+
+
+Annotator -minProbability 7 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -imgDir L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/All_CR/GroundTruth -maskDir L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT -inCanDir Q:/schildkr/cadx/setB/run_6_2_2004/June022004_MLM_SetB_OutCAN_GML_14feature -outDir Q:/schildkr/cadx/setB/run_6_2_2004/June022004_MLM_SetB_OutCAN_GML_14feature/annotated
+
+
+Annotator -minProbability 17 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir L:/singhal/LungSegImages/JSRT/LungMaskGtTiff -inCanDir Q:/schildkr/cadx/JSRT/run_6_2_2004/June022004_MLM_JSRT154logexp_7feature_outcan -outDir Q:/schildkr/cadx/JSRT/run_6_2_2004/June022004_MLM_JSRT154logexp_7feature_outcan/annotated
+
+
+CalcFeaturesApp -onlyCandidate 9 -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation/EK0015_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask O:/cadx/testAll/IntermediateResults/LungSegmentation_20040709/EK0015_0_PA_P_CR400_CO.tif -inCan O:/cadx/testAll/IntermediateResults/InitialCandidates_20040709/EK0015_0_PA_P_CR400_CO.can -outDir Q:/schildkr/cadx/setB/run -outCan Q:/schildkr/cadx/setB/run/cadx.can
+CalcFeaturesApp -onlyCandidate 12 -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation/EK0003_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask O:/cadx/testAll/IntermediateResults/LungSegmentation_20040709/EK0003_0_PA_P_CR400_CO.tif -inCan O:/cadx/testAll/IntermediateResults/InitialCandidates_20040709/EK0003_0_PA_P_CR400_CO.can -outDir Q:/schildkr/cadx/setB/run -outCan Q:/schildkr/cadx/setB/run/cadx.can
+
+CalcFeaturesApp -onlyCandidate 15 -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN082_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN082_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN137_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN137_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+
+CalcFeaturesApp -onlyCandidate 49 -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN055_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN055_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN055_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN055_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -debug -onlyHits -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN031_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN031_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN031_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN031_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -onlyCandidate 53 -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN071_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN071_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN071_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN071_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+
+Annotator -minProbability 17 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711 -inCanDir Q:/schildkr/cadx/JSRT/run_8_11_2004/OutCan_8-11 -outDir Q:/schildkr/cadx/JSRT/run_8_11_2004/OutCan_8-11/annotated
+
+CalcFeaturesListApp -candidatesFromHitFile -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -inCanDir O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711 -outDir Q:/schildkr/cadx/JSRT/run -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711
+CalcFeaturesListApp -candidatesFromHitFile -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules_tif.lst -imgDir L:/schildkraut/cadx/JSRT/rendered -inCanDir O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711 -outDir Q:/schildkr/cadx/JSRT/run -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711
+
+CalcFeaturesApp -onlyHits -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/JSRT/rendered/JPCLN055_CO.tif -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN055_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN055_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN055_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -onlyHits -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN055_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN055_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN055_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN055_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -onlyHits -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/JSRT/rendered/JPCLN154_CO.tif -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN154_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN154_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN154_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+CalcFeaturesApp -onlyHits -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation/JPCLN154_CO.img -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN154_CO.hit -mask O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711/JPCLN154_CO.tif -inCan O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711/JPCLN154_CO.can -outDir Q:/schildkr/cadx/JSRT/run -outCan Q:/schildkr/cadx/JSRT/run/cadx.can
+
+Annotator -minProbability .5 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711 -inCanDir Q:/schildkr/cadx/JSRT/run_8_11_2004/OutCan_8-11 -outDir Q:/schildkr/cadx/JSRT/run_8_11_2004/OutCan_8-11/annotated
+
+
+
+LungSeg EK0002_0_PA_P_CR400_CO.img
+
+
+ClassifierApp -data V:\schildkr_CADX\ISTL\cadx\data\August272004_AutoLungMask_AllCRandJSRT.gml -i V:\schildkr_CADX\ISTL\cadx\release\alpha1\tmp\EK0003_0_PA_P_CR400_CO_segmented.can -o V:\schildkr_CADX\ISTL\cadx\release\alpha1\tmp\EK0003_0_PA_P_CR400_CO_classified.can
+ClassifierApp -data V:\schildkr_CADX\ISTL\cadx\data\August272004_AutoLungMask_AllCRandJSRT.gml -i I:\schildkraut\August272004_AutoLungMask_RAW_AllCRandJSRT_inputCANfiles\EK0003_0_PA_P_CR400_CO.can -o c:\tmp\EK0003_0_PA_P_CR400_CO_classified.can
+
+AnnotatorApp -i V:\schildkr_CADX\ISTL\cadx\release\alpha1\tmp\EK0003_0_PA_P_CR400_CO_rendered.tif -can V:\schildkr_CADX\ISTL\cadx\release\alpha1\tmp\ -o c:\tmp\annotated.jpg
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation/EK0003_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0003_0_PA_P_CR400_CO.tif -outCan Q:/schildkr/cadx/setB/run/EK0003_0_PA_P_CR400_CO.can -outDir Q:/schildkr/cadx/setB/run
+
+Annotator -minProbability .5 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711 -inCanDir Q:\schildkr\cadx\release\alpha1\jsrt -outDir Q:\schildkr\cadx\release\alpha1\jsrt\annotated
+Annotator -minProbability .5 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/AllCR.lst -imgDir L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/All_CR/GroundTruth -inCanDir Q:\schildkr\cadx\release\alpha1\AllCR -outDir Q:\schildkr\cadx\release\alpha1\AllCR\annotated
+
+ClassifierApp -data V:\schildkr_CADX\ISTL\cadx\data\August272004_AutoLungMask_AllCRandJSRT.gml -i c:/cadx/JPCLN017_CO.can  -outCan c:/cadx.can
+
+
+
+CalcFeaturesApp -onlyCandidate 26 -log -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img c:/tmp/cadx.img -hit c:/tmp/cadx.hit -mask c:/tmp/cadx_mask.tif -inCan c:/tmp/cadx_in.can -outDir Q:/tmp -outCan c:/tmp/cadx_out.can
+
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0003_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0003_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0031_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0031_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0031_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0015_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0015_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0041_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0041_0_PA_P_CR400_CO.hit -mask L:/schildkraut/cadx/All_CR/IntermediateResults/LungSegmentation_20040709/EK0041_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0004_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0004_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0004_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0042_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0042_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0042_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0066_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0066_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0066_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0004_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0004_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0004_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0086_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0086_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0086_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0066_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0066_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0066_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0074_0_PA_P_CR400_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0074_0_PA_P_CR400_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0074_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/TGH-EK0189_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/TGH-EK0189_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/TGH-EK0189_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/TGH-EK0065_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/TGH-EK0065_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/TGH-EK0065_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/TGH-EK0200_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/TGH-EK0200_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/TGH-EK0200_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/TGH-EK0130_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/TGH-EK0130_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/TGH-EK0130_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img L:/schildkraut/cadx/All_CR/images/rendered/EK0084_0_PA_CR800_CO.img -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0084_0_PA_CR800_CO.hit -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0084_0_PA_CR800_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+
+
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -img Q:/schildkr/cadx/targets/target1.tif -mask Q:/schildkr/cadx/targets/target1_mask.png -outCan Q:/schildkr/cadx/targets/run/target1.can -outDir c:/tmp
+
+
+
+Annotator -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -imgDir L:/singhal/LungSegImages/JSRT/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -maskDir O:/cadx/JSRT/IntermediateResults/LungSegmentation_20040711 -inCanDir O:/cadx/JSRT/IntermediateResults/InitialCandidates_20040711 -outDir O:/cadx/JSRT/IntermediateResults/Annotated_20040711
+Annotator -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/AllCR.lst -imgDir L:/singhal/LungSegImages/All_CR/Images/CorrectOrientation -hitDir L:/singhal/LungSegImages/All_CR/GroundTruth -maskDir O:/cadx/All_CR/IntermediateResults/LungSegmentation_20040709 -inCanDir O:/cadx/All_CR/IntermediateResults/InitialCandidates_20040709 -outDir O:/cadx/All_CR/IntermediateResults/Annotated_20040709
+
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN016_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN016_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN016_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN003_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN003_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN003_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN018_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN018_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN018_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN020_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN020_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN020_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN028_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN028_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN028_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN148_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN148_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN148_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN001_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN001_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN001_CO.hit
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/JSRT/images/rendered/JPCLN017_CO.img -mask L:/singhal/LungSegImages/JSRT/LungMaskGtTiff/JPCLN017_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/JSRT/GroundTruth/JPCLN017_CO.hit
+
+
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_short.lst -canDir Q:/schildkr/cadx/JSRT/run -hitDir L:/singhal/LungSegImages/All_CR/GroundTruth -o Q:/schildkr/cadx/jsrt/run/cadx.stat -plot Q:/schildkr/cadx/jsrt/run/cadx.plot
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -canDir L:/schildkraut/cadx/JSRT/IntermediateResults/InitialCandidates_20040711 -hitDir L:/singhal/LungSegImages/JSRT/GroundTruth -o c:/tmp2/cadx.stat -plot c:/tmp2/cadx.plot
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx4.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -canDir L:/schildkraut/cadx/All_CR/IntermediateResults/InitialCandidates_20040709 -hitDir L:/singhal/LungSegImages/All_CR/GroundTruth -o c:/tmp2/cadx.stat -plot c:/tmp2/cadx.plot
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/schildkraut/cadx/Temporary_WIISE_Processed/Eclipse_ExamIndependent_PValue_GlobalModel_YesBlkSurround/EK0003_0_PA_P_CR400_CO.tif -mask L:/singhal/LungSegImages/All_CR/GroundTruth/lungGT/EK0003_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp -hit L:/singhal/LungSegImages/All_CR/GroundTruth/EK0003_0_PA_P_CR400_CO.hit
+
+
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/LungCAD/All_CR/images/rendered_EDEP/EK0003_0_PA_P_CR400_CO.dcm -hit L:/LungCAD/All_CR/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask L:/LungCAD/All_CR/lungGT/EK0003_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/LungCAD/All_CR/images/rendered_EDEP/EK0015_0_PA_P_CR400_CO.dcm -hit L:/LungCAD/All_CR/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask L:/LungCAD/All_CR/lungGT/EK0015_0_PA_P_CR400_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+IcdApp -log -debug -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -img L:/LungCAD/All_CR/images/rendered_EDEP/TGH-EK0130_CO.dcm -hit L:/LungCAD/All_CR/GroundTruth/TGH-EK0130_CO.hit -mask L:/LungCAD/All_CR/lungGT/TGH-EK0130_CO.tif -outCan c:/tmp/out.can -outDir c:/tmp
+
+AnnotatorApp2 -circles -minProbability 50 -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/TGH-EK0130_CO.dcm -can L:/LungCAD/results/setB/run_11_18_2004/setB_11_18_2004_OutCan/TGH-EK0130_CO.can -o c:\tmp\annotated.jpg -hit L:/LungCAD/All_CR/GroundTruth/TGH-EK0130_CO.hit
+
+-i %TMP%/%BASENAME%_8bit.tif -p data/lungmask/asmsearch.txt -l data/lungmask/lungL.asm -r data/lungmask/lungR.asm -mask %OUTDIR%/%BASENAME%_mask.png -overlay %TMP%/%BASENAME%_lung_overlay.tif -subsample 4 -noorient
+
+
+ChestCADApp -report c:/tmp/chestCADReport.txt -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/TGH-EK0130_CO.dcm -hit L:/LungCAD/All_CR/GroundTruth/TGH-EK0130_CO.hit -o c:/tmp/chestCADOut.tif -outDir c:/tmp
+
+
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/TGH-EK0130_CO.dcm -outDir c:/tmp -truth L:/LungCAD/All_CR/GroundTruth/TGH-EK0130_CO.hit
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/EK0015_0_PA_P_CR400_CO.dcm -outDir c:/tmp -truth L:/LungCAD/All_CR/GroundTruth/EK0015_0_PA_P_CR400_CO.dcm
+
+
+Annotate -minProbability 0.5 -parm L:\LungCAD\data\cadx5.parm -outDir L:\schildkraut\tmp -list L:\LungCAD\lst\AllCR.lst -canDir L:\LungCAD\CAN\AllCR_11_23_2004 -hitDir L:\LungCAD\All_CR\GroundTruth -imgDir L:\LungCAD\All_CR\images\rendered_EDEP
+
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i I:/heath/NYPH_CAD_Images_02152004/Processing/DICOM/14bit/NYPH02152005_C11_CO.dcm -outDir c:/tmp
+
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -canDir c:/tmp -hitDir L:/LungCAD/All_CR/GroundTruth -o c:/tmp/setB.stat -plot c:/tmp/setB.plot
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -canDir c:/tmp -hitDir L:/LungCAD/JSRT/GroundTruth -o c:/tmp/jsrt.stat -plot c:/tmp/jsrt.plot
+
+
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i I:/heath/NYPH_CAD_Images_02152004/Processing/DICOM/14bit/NYPH02152005_C11_CO.dcm -outDir c:/tmp
+
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/JSRT/images/rendered_EDEP/JPCLN002_CO.dcm -truth L:/LungCAD/JSRT/GroundTruth -outDir c:/tmp
+ChestCADApp -log -classData ../data/classifier_allCR_11_23_04_JSRT_11_22_04/classifierData.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/EK0028_0_PA_P_CR400_CO.dcm -truth L:/LungCAD/All_CR/groundtruth -outDir c:/tmp
+
+ChestCADApp -log -classData ../data/ALLCRandJSRT_3_17_2005.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/EK0053_0_PA_P_CR400_CO.dcm -truth L:/LungCAD/All_CR/groundtruth -outDir c:/tmp
+
+ChestCADApp -log -classData ../data/ALLCRandJSRT_3_17_2005.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/AdditionalImages/NYPH02152005_C19_CO.dcm -truth L:/LungCAD/All_CR/groundtruth -outDir c:/tmp
+
+
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -list V:/schildkr_CADX/ISTL/cadx/lst/setB.lst -canDir L:/LungCAD/results/beta1.1 -hitDir L:/LungCAD/All_CR/GroundTruth -o L:/LungCAD/results/beta1.1/setB.stat -plot L:/LungCAD/results/beta1.1/setB.plot
+FeatureAnalysisApp -parm V:/schildkr_CADX/ISTL/cadx/data/cadx5.parm -list V:/schildkr_CADX/ISTL/cadx/lst/jsrt_nodules.lst -canDir L:/LungCAD/results/beta1.1 -hitDir L:/LungCAD/JSRT/GroundTruth -o L:/LungCAD/results/beta1.1/jsrt.stat -plot L:/LungCAD/results/beta1.1/jsrt.plot
+
+
+ChestCADApp -log -classData ../data/beta1p2_all.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/TGH-EK0050_CO.dcm -truth L:/LungCAD/All_CR/groundtruth -outDir c:/tmp
+
+ChestCADApp -log -classData ../data/beta1p2_all.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/AdditionalImages/NYPH02152005_C11_CO.dcm -outDir c:/tmp
+
+ChestCADApp -log -classData ../data/beta1p2_all.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -i L:/LungCAD/All_CR/images/rendered_EDEP/EK0015_0_PA_P_CR400_CO.dcm -outDir c:/tmp
+
+
+
+
+
+
+

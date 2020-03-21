@@ -1,0 +1,203 @@
+
+
+[ -img F:/JSRT_Database/Images/JPCLN001_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN001_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN001_CO.can -hit F:/JSRT_Database/Truth/JPCLN001_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN001_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN002_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN002_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN002_CO.can -hit F:/JSRT_Database/Truth/JPCLN002_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN002_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN003_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN003_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN003_CO.can -hit F:/JSRT_Database/Truth/JPCLN003_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN003_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN004_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN004_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN004_CO.can -hit F:/JSRT_Database/Truth/JPCLN004_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN004_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN005_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN005_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN005_CO.can -hit F:/JSRT_Database/Truth/JPCLN005_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN005_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN006_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN006_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN006_CO.can -hit F:/JSRT_Database/Truth/JPCLN006_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN006_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN007_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN007_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN007_CO.can -hit F:/JSRT_Database/Truth/JPCLN007_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN007_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN008_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN008_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN008_CO.can -hit F:/JSRT_Database/Truth/JPCLN008_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN008_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN009_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN009_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN009_CO.can -hit F:/JSRT_Database/Truth/JPCLN009_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN009_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN010_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN010_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN010_CO.can -hit F:/JSRT_Database/Truth/JPCLN010_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN010_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN011_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN011_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN011_CO.can -hit F:/JSRT_Database/Truth/JPCLN011_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN011_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN012_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN012_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN012_CO.can -hit F:/JSRT_Database/Truth/JPCLN012_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN012_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN013_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN013_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN013_CO.can -hit F:/JSRT_Database/Truth/JPCLN013_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN013_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN014_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN014_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN014_CO.can -hit F:/JSRT_Database/Truth/JPCLN014_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN014_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN015_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN015_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN015_CO.can -hit F:/JSRT_Database/Truth/JPCLN015_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN015_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN016_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN016_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN016_CO.can -hit F:/JSRT_Database/Truth/JPCLN016_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN016_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN017_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN017_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN017_CO.can -hit F:/JSRT_Database/Truth/JPCLN017_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN017_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN018_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN018_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN018_CO.can -hit F:/JSRT_Database/Truth/JPCLN018_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN018_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN019_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN019_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN019_CO.can -hit F:/JSRT_Database/Truth/JPCLN019_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN019_CO.png ] 
+
+[ -img F:/JSRT_Database/Images/JPCLN020_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN020_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN020_CO.can -hit F:/JSRT_Database/Truth/JPCLN020_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN020_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN021_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN021_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN021_CO.can -hit F:/JSRT_Database/Truth/JPCLN021_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN021_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN022_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN022_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN022_CO.can -hit F:/JSRT_Database/Truth/JPCLN022_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN022_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN023_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN023_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN023_CO.can -hit F:/JSRT_Database/Truth/JPCLN023_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN023_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN024_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN024_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN024_CO.can -hit F:/JSRT_Database/Truth/JPCLN024_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN024_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN025_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN025_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN025_CO.can -hit F:/JSRT_Database/Truth/JPCLN025_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN025_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN026_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN026_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN026_CO.can -hit F:/JSRT_Database/Truth/JPCLN026_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN026_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN027_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN027_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN027_CO.can -hit F:/JSRT_Database/Truth/JPCLN027_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN027_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN028_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN028_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN028_CO.can -hit F:/JSRT_Database/Truth/JPCLN028_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN028_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN029_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN029_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN029_CO.can -hit F:/JSRT_Database/Truth/JPCLN029_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN029_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN030_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN030_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN030_CO.can -hit F:/JSRT_Database/Truth/JPCLN030_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN030_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN031_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN031_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN031_CO.can -hit F:/JSRT_Database/Truth/JPCLN031_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN031_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN032_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN032_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN032_CO.can -hit F:/JSRT_Database/Truth/JPCLN032_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN032_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN033_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN033_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN033_CO.can -hit F:/JSRT_Database/Truth/JPCLN033_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN033_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN034_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN034_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN034_CO.can -hit F:/JSRT_Database/Truth/JPCLN034_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN034_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN035_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN035_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN035_CO.can -hit F:/JSRT_Database/Truth/JPCLN035_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN035_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN036_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN036_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN036_CO.can -hit F:/JSRT_Database/Truth/JPCLN036_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN036_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN037_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN037_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN037_CO.can -hit F:/JSRT_Database/Truth/JPCLN037_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN037_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN038_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN038_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN038_CO.can -hit F:/JSRT_Database/Truth/JPCLN038_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN038_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN039_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN039_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN039_CO.can -hit F:/JSRT_Database/Truth/JPCLN039_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN039_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN040_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN040_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN040_CO.can -hit F:/JSRT_Database/Truth/JPCLN040_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN040_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN041_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN041_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN041_CO.can -hit F:/JSRT_Database/Truth/JPCLN041_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN041_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN042_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN042_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN042_CO.can -hit F:/JSRT_Database/Truth/JPCLN042_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN042_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN043_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN043_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN043_CO.can -hit F:/JSRT_Database/Truth/JPCLN043_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN043_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN044_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN044_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN044_CO.can -hit F:/JSRT_Database/Truth/JPCLN044_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN044_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN045_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN045_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN045_CO.can -hit F:/JSRT_Database/Truth/JPCLN045_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN045_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN046_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN046_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN046_CO.can -hit F:/JSRT_Database/Truth/JPCLN046_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN046_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN047_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN047_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN047_CO.can -hit F:/JSRT_Database/Truth/JPCLN047_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN047_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN048_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN048_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN048_CO.can -hit F:/JSRT_Database/Truth/JPCLN048_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN048_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN049_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN049_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN049_CO.can -hit F:/JSRT_Database/Truth/JPCLN049_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN049_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN050_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN050_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN050_CO.can -hit F:/JSRT_Database/Truth/JPCLN050_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN050_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN051_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN051_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN051_CO.can -hit F:/JSRT_Database/Truth/JPCLN051_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN051_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN052_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN052_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN052_CO.can -hit F:/JSRT_Database/Truth/JPCLN052_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN052_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN053_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN053_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN053_CO.can -hit F:/JSRT_Database/Truth/JPCLN053_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN053_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN054_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN054_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN054_CO.can -hit F:/JSRT_Database/Truth/JPCLN054_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN054_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN055_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN055_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN055_CO.can -hit F:/JSRT_Database/Truth/JPCLN055_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN055_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN056_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN056_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN056_CO.can -hit F:/JSRT_Database/Truth/JPCLN056_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN056_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN057_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN057_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN057_CO.can -hit F:/JSRT_Database/Truth/JPCLN057_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN057_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN058_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN058_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN058_CO.can -hit F:/JSRT_Database/Truth/JPCLN058_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN058_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN059_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN059_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN059_CO.can -hit F:/JSRT_Database/Truth/JPCLN059_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN059_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN060_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN060_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN060_CO.can -hit F:/JSRT_Database/Truth/JPCLN060_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN060_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN061_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN061_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN061_CO.can -hit F:/JSRT_Database/Truth/JPCLN061_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN061_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN062_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN062_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN062_CO.can -hit F:/JSRT_Database/Truth/JPCLN062_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN062_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN063_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN063_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN063_CO.can -hit F:/JSRT_Database/Truth/JPCLN063_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN063_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN064_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN064_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN064_CO.can -hit F:/JSRT_Database/Truth/JPCLN064_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN064_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN065_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN062_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN065_CO.can -hit F:/JSRT_Database/Truth/JPCLN065_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN065_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN066_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN066_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN066_CO.can -hit F:/JSRT_Database/Truth/JPCLN066_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN066_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN067_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN067_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN067_CO.can -hit F:/JSRT_Database/Truth/JPCLN067_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN067_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN068_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN068_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN068_CO.can -hit F:/JSRT_Database/Truth/JPCLN068_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN068_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN069_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN069_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN069_CO.can -hit F:/JSRT_Database/Truth/JPCLN069_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN069_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN070_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN070_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN070_CO.can -hit F:/JSRT_Database/Truth/JPCLN070_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN070_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN071_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN071_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN071_CO.can -hit F:/JSRT_Database/Truth/JPCLN071_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN071_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN072_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN072_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN072_CO.can -hit F:/JSRT_Database/Truth/JPCLN072_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN072_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN073_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN073_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN073_CO.can -hit F:/JSRT_Database/Truth/JPCLN073_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN073_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN074_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN074_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN074_CO.can -hit F:/JSRT_Database/Truth/JPCLN074_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN074_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN075_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN075_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN075_CO.can -hit F:/JSRT_Database/Truth/JPCLN075_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN075_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN076_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN076_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN076_CO.can -hit F:/JSRT_Database/Truth/JPCLN076_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN076_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN077_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN077_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN077_CO.can -hit F:/JSRT_Database/Truth/JPCLN077_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN077_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN078_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN078_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN078_CO.can -hit F:/JSRT_Database/Truth/JPCLN078_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN078_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN079_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN079_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN079_CO.can -hit F:/JSRT_Database/Truth/JPCLN079_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN079_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN080_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN080_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN080_CO.can -hit F:/JSRT_Database/Truth/JPCLN080_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN080_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN081_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN081_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN081_CO.can -hit F:/JSRT_Database/Truth/JPCLN081_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN081_CO.png ]
+
+[ -img F:/JSRT_Database/Images/JPCLN082_CO.img -outCan Q:/schildkr/cadx/jsrt/can/JPCLN082_CO.can -inCan Q:/schildkr/cadx/jsrt/can/can_6_24_2003/JPCLN082_CO.can -hit F:/JSRT_Database/Truth/JPCLN082_CO.hit -mask F:/JSRT_Database/lungMasks/JPCLN082_CO.png ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

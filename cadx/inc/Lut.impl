@@ -1,0 +1,532 @@
+//
+//  (c) Copyright Eastman Kodak Company 
+//  343 State Street
+//  Rochester, NY 14650
+//  All rights reserved
+//
+
+
+
+#include "Lut.h"
+
+
+template <class LType>
+void Lut<LType>::Allocate_Memory()
+{
+    long b;
+
+    NoLevels = Max_i - Min_i + 1; 
+
+    Bytes = NoLevels * NoBands * sizeof(LType);
+
+    if (NULL == Data)
+    {
+        try {
+            Data = new LType[NoLevels * NoBands];
+        }
+        catch (...) {
+            Data = NULL;
+        }
+        if (NULL == Data) {
+            return;
+        }
+        Own = true;
+    }
+    else
+    {
+        Own = false;
+    }
+
+    try
+    {
+        BandPtr = new LType* [NoBands + 1];
+    }
+    catch (...)
+    {
+        BandPtr = NULL;
+    }
+    if (NULL == BandPtr)
+    {
+        Free();
+        return;
+    }
+
+    for (b = 1; b <= NoBands; b++)
+    {
+        BandPtr[b] = Data + NoLevels * (b - 1) - Min_i;
+    }
+
+    return;
+}
+
+template <class LType>
+void Lut<LType>::Initialize()
+{
+    Data = NULL;
+    BandPtr = NULL;
+    Min_i = 0;
+    Max_i = 0;
+    NoLevels = 0;   
+    NoBands = 0;
+    Bytes = 0; 
+    Own = false; 
+}
+
+
+template <class LType>
+Lut<LType>::Lut(long _Min_i, long _Max_i, long _NoBands)
+{
+    Initialize();
+    Min_i = _Min_i;
+    Max_i = _Max_i;   
+    NoBands = _NoBands; 
+    Allocate_Memory();
+} 
+
+
+template <class LType>
+Lut<LType>::Lut(const Lut<LType>& lut) {
+    // Initialize, then use operator= to do the copy.
+    Initialize();
+    *this = lut;
+}
+
+template <class LType>
+Lut<LType>* Lut<LType>::Set_Pointer(long _Min_i, long _Max_i, long _NoBands) {
+    Lut<LType>* Ptr = NULL;  
+
+    try
+    {
+        Ptr = new Lut<LType>;
+    }
+    catch (...)
+    {
+         Ptr = NULL;
+    }
+    if (NULL == Ptr)
+        return NULL;
+
+    //Ptr->Initialize();   // KRD -- this should be done by default 
+                           //        constructor via the new
+
+    Ptr->Min_i = _Min_i;
+    Ptr->Max_i = _Max_i;   
+    Ptr->NoBands = _NoBands; 
+
+    Ptr->Allocate_Memory();
+    if (JUTIL_OK != Ptr->ErrorCode)
+    {
+        delete Ptr;
+        Ptr = NULL;
+        return NULL;
+    }
+
+    return Ptr;
+}
+
+template <class LType>
+void Lut<LType>::Create(long _Min_i, long _Max_i, long _NoBands)
+{
+    Free();
+
+    Min_i = _Min_i;
+    Max_i = _Max_i;   
+    NoBands = _NoBands; 
+
+    Allocate_Memory();
+}
+
+
+template <class LType>
+short Lut<LType>::Read_File(const char* const FileName)
+{
+    long     k, b, i;
+    LType    Code;
+    ifstream S;
+
+    S.open(FileName);
+    if (!S)
+        return -1;
+
+    S >> Min_i >> Max_i >> NoBands;
+
+    Allocate_Memory();
+    if (JUTIL_OK != ErrorCode)
+        return -1;
+
+    for (k = 0; k < NoLevels; k++)
+    {
+        S >> i;
+        for (b = 1; b <= NoBands; b++)
+            S >> Val(i, b);
+    }
+
+    S.close();
+
+    return 0;
+}
+
+template <class LType>
+short Lut<LType>::Write_File(const char * const FileName)
+{
+    long     k, b;
+    ofstream S;
+
+    S.open(FileName);
+    if (S.fail())
+        return -1;
+
+    S << setw(10) << Min_i << setw(10) << Max_i << setw(10) << NoBands;
+    if (S.fail())
+        return -1;
+
+    for (k = Min_i; k <= Max_i; k++)
+    {
+        S << "\n " << setw(10) << k;
+
+        for (b = 1; b <= NoBands; b++)
+            S << setw(15) << *Entry(k, b);
+
+        if (S.fail())     // just check for error at the end of the loop.
+            return -1;
+    }
+
+    S.close();
+
+    return 0;
+}
+
+
+template <class LType>
+Lut<LType>& Lut<LType>::operator=(const Lut<LType>& lut)
+{
+    //
+    //  checks against self assignment
+    //
+    if (this == &lut)
+    {
+        return *this;
+    }
+
+    //
+    //  We own our own Data and we have some. Destroy it.
+    //
+    if (Own && (NULL != Data))
+    {
+        Free();
+    }
+
+    Min_i = lut.Min_i;
+    Max_i = lut.Max_i;
+    NoBands = lut.NoBands;
+
+    //
+    // If the LUT parameter doesn't own its data, we'll
+    // share it with the new one as well.
+    // We won't destroy the data since Own will be non-zero.
+    //
+    Own = lut.Own;
+
+    Allocate_Memory();
+ 
+	Copy(Lut);
+
+    return *this;
+}
+
+
+template <class LType>
+void Lut<LType>::Dump()
+{
+    long k, b;
+
+    cout << "\n\n" << setw(10) << Min_i <<
+      setw(10) << Max_i <<
+      setw(10) << NoBands << endl;
+
+    for (k = Min_i; k <= Max_i; k++) {
+        cout << "\n " << setw(10) << k;
+
+        for (b = 1; b <= NoBands; b++)
+          cout << setw(15) << Val(k, b);
+    }
+
+    cout << endl;
+}
+
+
+template <class LType>
+void Lut<LType>::Scale(double C, long b)
+{
+  long k;
+
+  for (k = Min_i; k <= Max_i; k++)
+      *Entry(k, b) = Nint(C * *Entry(k, b));  // KRD -- Not JUTIL::Nint?
+}
+
+
+template <class LType>
+LType Lut<LType>::Interpolate(double v, long b)
+{
+    long   k, v1, v2;
+    LType  e1, e2;
+    double w1, w2;
+
+    if (v <= Min_i)
+        return Val(Min_i, b);
+    else if (v >= Max_i)
+        return Val(Max_i, b);
+
+    v1 = (short)floor(v);
+    v2 = (short)ceil(v);
+
+    e1 = Val(v1, b); 
+    e2 = Val(v2, b); 
+
+    w1 = ABS(v - v2);
+    w2 = ABS(v - v1);
+
+    return (LType)(w1 * e1 + w2 * e2);
+}
+
+
+template <class LType>
+LType Lut<LType>::Max(long b)
+{
+   long k;
+   LType Max;
+
+   Max = *Entry(Min_i, b);
+
+   for(k = Min_i; k <= Max_i; k++) if(*Entry(k, b) > Max) Max = *Entry(k, b);
+
+   return Max;
+}
+
+
+template <class LType>
+Lut<LType>& Lut<LType>::Combine(Lut<LType>& lut1, Lut<LType>& lut2, long b)
+{
+   long k, Index;
+
+   Lut<LType> *lut3 = Lut<LType>::Set_Pointer(lut1.Min_i, lut1.Max_i, 1);
+
+   for(k = lut1.Min_i; k <= lut1.Max_i; k++)
+   {
+       Index = *lut1.Entry(k, b);
+       if((Index < lut2.Min_i)||(Index > lut2.Max_i)) *lut3->Entry(k, 1) = 0;
+       else *lut3->Entry(k, 1) = *lut2.Entry(Index, b);
+   }
+
+   return *lut3;
+}
+
+
+template <class LType>
+void Lut<LType>::Sort(long Key)
+{
+	long k, j;
+
+	for(k = Min_i; k < Max_i; k++) {
+		for(j = k + 1; j <= Max_i; j++) {
+			if(Val(j, Key) > Val(k, Key)) {
+				Switch(j, k);
+	}}}
+}
+
+
+template <class LType>
+void Lut<LType>::Sort_Ascending(long Key, long Min, long Max)
+{
+   long k, j;
+
+   for(k = Min; k < Max; k++)
+     for(j = k + 1; j <= Max; j++) if(Val(j, Key) < Val(k, Key)) Switch(j, k);
+}
+
+
+template <class LType>
+void Lut<LType>::Merge_Ascending(long Key, long Min, long Max, JEntry<LType>& newEntry)
+{
+   long k, b;
+
+   for(k = Max; k >= Min; k--) if(Val(k, Key) <= newEntry.Val(Key)) break;
+
+   Move_Block(k + 1, k + 2, Max - k);
+
+   for(b = 1; b <= NoBands; b++) Val(k + 1, b) = newEntry.Val(b);
+}
+
+
+
+template <class LType>
+void Lut<LType>::mergeDescending(long Key, long Min, long Max, JEntry<LType>& newEntry)
+{
+   long k, b;
+
+   for(k = Max; k >= Min; k--) if(Val(k, Key) >= newEntry.Val(Key)) break;
+
+   Move_Block(k + 1, k + 2, Max - k);
+
+   for(b = 1; b <= NoBands; b++) Val(k + 1, b) = newEntry.Val(b);
+}
+
+
+
+
+template <class LType>
+void Lut<LType>::Sort_Descending(long Key, long Min, long Max)
+{
+   long k, j;
+
+   for(k = Min; k < Max; k++)
+     for(j = k + 1; j <= Max; j++) if(Val(j, Key) > Val(k, Key)) Switch(j, k);
+}
+
+
+template <class LType>
+void Lut<LType>::Move_Block(long From, long To, long NoEntries)
+{
+   long k, j, b, Size = NoEntries * NoBands * sizeof(LType);
+
+   if(NoEntries == 0) return;
+
+   Lut<LType> tmp(1, NoEntries, NoBands);
+
+   for(k = From, j = 1; j <= NoEntries; j++, k++)
+     for(b = 1; b <= NoBands; b++) tmp.Val(j, b) = Val(k, b);
+
+   for(k = To, j = 1; j <= NoEntries; j++, k++)
+     for(b = 1; b <= NoBands; b++) Val(k, b) = tmp.Val(j, b);
+
+//   memmove((void *)Entry(To, 1), (void *)Entry(From, 1), Size);
+}
+
+
+template <class LType>
+void Lut<LType>::Switch(long j, long k)
+{
+   long b;
+   LType V;
+
+   for(b = 1; b <= NoBands; b++)
+   {
+     V = Val(j, b);
+     Val(j, b) = Val(k, b);
+     Val(k, b) = V;
+   }
+}
+
+
+template <class LType>
+void Lut<LType>::Replace(long j, long k)
+{
+   long b;
+
+   for(b = 1; b <= NoBands; b++) Val(j, b) = Val(k, b);
+}
+
+
+template <class LType>
+void Lut<LType>::Invert(long Key)
+{
+   long k, b, Index;
+
+   Lut<LType> Inverse(Min_i, Max_i, NoBands);
+ 
+   for(k = Min_i; k <= Max_i; k++)
+   {         
+       Index = *Entry(k, Key);
+       *Inverse.Entry(Index, Key) = k;
+       for(b = 1; b <= NoBands; b++) if(b != Key) *Inverse.Entry(Index, b) = *Entry(k, b);
+   }
+
+   for(k = Min_i; k <= Max_i; k++) 
+     for(b = 1; b <= NoBands; b++) *Entry(k, b) = *Inverse.Entry(k, b);
+     
+}
+
+
+template <class LType>
+void  Lut<LType>::Trapazoid(long *Node, LType Max, long b)
+{
+   long k, A, B, C, D;
+   double B_A, D_C;
+
+   A = Node[0];
+   B = Node[1];
+   C = Node[2];
+   D = Node[3];
+
+   B_A = B - A;
+   D_C = D - C;
+
+   for(k = Min_i; k < A; k++) *Entry(k, b) = 0;
+   for(k = A; k < B; k++) *Entry(k, b) = Max * (double)(k - A) / B_A;
+   for(k = B; k < C; k++) *Entry(k, b) = Max;
+   for(k = C; k < D; k++) *Entry(k, b) = Max * (1.0 - (double)(k - C) / D_C);
+   for(k = D; k <= Max_i; k++) *Entry(k, b) = 0;
+}
+
+
+template <class LType>
+void Lut<LType>::Gamma(double g, double MaxValue, long b)
+{
+   long k;
+
+   for(k = Min_i; k <= Max_i; k++)
+   {
+       // KRD added cast
+       Val(k, b) = (LType)(MaxValue * pow((double)k / (double)Max_i, g));
+   }
+}
+
+
+//******* Entry Class *****************
+
+
+template <class EType>
+void JEntry<EType>::Allocate_Memory()
+{
+   Bytes = sizeof(EType) * NoBands;
+
+   if (NULL == Data)
+   {
+       try
+       {
+           Data = new EType[NoBands]; 
+       }
+       catch (...)
+       {
+           Data = NULL;
+       }
+       if (NULL == Data)
+       {
+           return;
+       }
+   }
+   
+   Offset = Data - 1;
+}
+
+
+template <class EType>
+void JEntry<EType>::Initialize()
+{
+   Data = NULL;
+   Offset = NULL;
+   NoBands = 0;
+   Bytes = 0; 
+}
+
+
+template <class EType>
+JEntry<EType>::JEntry(long _NoBands)
+{
+   Initialize();
+
+   NoBands = _NoBands;
+   
+   Allocate_Memory();
+}
+

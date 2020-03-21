@@ -1,0 +1,16 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src
+2
+c
+d:preprocessing|2|0|0|0|f43128a7b2124cabaad3a609eefdb3c8|0
+4:apps|2|0|0|0|936eb02cbe754fe282d8ef4f3680054c|0
+10:matlabclassifier|2|0|0|0|38672134559f47c3888051982e671645|0
+d:cppclassifier|2|0|0|0|8542053896be4a55a6524da0656e75cf|0
+8:training|2|0|0|0|64e456044afa45ee8e59b6e62247ed9d|0
+c:segmentation|2|0|0|0|725620f79c504cd3ace6a8ac8775c119|0
+a:candidates|2|0|0|0|3fd13805b54749c49aa697fb6f4b1deb|0
+3:ICD|2|0|0|0|4b6bef51230642e4a2b86fb350af698c|0
+8:features|2|0|0|0|c701aab6ac9b46ada9853968e742b98a|0
+4:data|2|0|0|0|cb58acde50754063908bed65750b686b|0
+4:util|2|0|0|0|0a241ec3de90456795b831a549a9f024|0
+8:lungmask|2|0|0|0|30ce21635f1b4e8a91fd725dde5958bf|0

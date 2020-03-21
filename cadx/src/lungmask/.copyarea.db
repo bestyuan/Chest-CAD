@@ -1,0 +1,9 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\lungmask
+2
+5
+15:LungMaskFunctions.cpp|1|1047f9ae8e0|56b5|cc0c314|2191e02490f74fd48923dba368d05aa8|0
+c:LungMask.cpp|1|1047f9ae796|1bbd|b724e5dd|d826da93ed5e4fea89412ebea59cac3e|0
+b:AsmTest.cpp|1|1047f9ae4f7|22ad|ca04e14b|4b2a8405700d4b7b8d2f8e3831db23db|0
+11:LungMaskMaker.cpp|1|1047f9ae980|1986|d6cb7654|c5fb7eb6cd234f63ae15c5bed056d6be|0
+f:Chest_PA_AP.cpp|1|1047f9ae67d|4adb|8d01d02|0993eff46771492ea51ee50738bea18e|0

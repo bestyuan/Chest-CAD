@@ -1,0 +1,13 @@
+#!/bin/tcsh
+#
+# strip_img_paths_files input_directory output_directory
+#
+# runs strip_img_paths on all .can files in input_directory, placing
+# the results in output_directory.
+#
+
+foreach i ( $1/*.can )
+
+echo $i 
+strip_img_paths $i > $2/`basename $i`
+end

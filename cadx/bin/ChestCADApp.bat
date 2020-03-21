@@ -1,0 +1,1 @@
+ChestCADApp -showAll -log -classData ../data/beta1p2_all.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -debug -i E:\图像数据\胸片\UofC\pa48.img -iribsup E:\图像数据\胸片\UofC\pa48.img -outDir E:\图像数据\胸片\UofCout -truth E:\图像数据\胸片\GroundTruthUOFC

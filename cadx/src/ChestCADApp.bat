@@ -1,0 +1,1 @@
+ChestCADApp -showAll -log -classData ../data/beta1p2_all.gml -lungParm ../data/lungmask/asmsearch.txt -leftLung ../data/lungmask/lungL.asm -rightLung ../data/lungmask/lungR.asm -parm ../data/cadx5.parm -debug -i H:\Chest-X-CAD\CR_Images\Images\EK0002_0_PA_P_CR400_CO.dcm -outDir H:\Chest-X-CAD\TempResult -truth H:\Chest-X-CAD\CR_Images\GroundTruth

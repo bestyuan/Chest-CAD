@@ -1,0 +1,54 @@
+# - Lines beginning with the 'pound' symbol will be treated as comments
+#
+# 11/18/2002
+#
+# Defined by Jim Sehnert, Eastman Kodak HI Research and Development
+#
+# This file is an example of a descriptor file used by the command-line application FAdd.exe. The application is designed to 
+# add disease features to radiographic imagery whose pixel elements are stored in an integer format that is directly proportional
+# to exposure (NOT LOG EXPOSURE).
+#
+# NOTES:
+# 1.) The pixel values of the input image must be 2-byte non-negative integer values.
+# 2.) The values of the tags INPUT_BYTE_ORDER and OUTPUT_BYTE_ORDER must be set to 0 to indicate PC Intel microprocesser architecture or it can
+#     be set to 1 for RISC based architecture which is prevalent on most UNIX boxes.
+# 3.) Currently the value of the tag FEATURE_TYPE must be Nodule, the only currently supported diseasefeature.
+#
+#
+# Input image information fields
+# 
+INPUT_FILE_NAME=f:\vss\fadd\data
+INPUT_WIDTH=2048
+INPUT_HEIGHT=2048
+INPUT_HEADER_LENGTH=0
+INPUT_BYTE_ORDER=0
+#
+#
+# Output image information fields
+#
+OUTPUT_FILE_NAME=f:\vss\fadd\data\
+OUTPUT_BYTE_ORDER=0
+#
+#
+# Feature Descriptors
+#
+# Notes for the lung nodule:
+#  A) Lateral feature size typically on the order of10-30mm
+#  B) Attenuation of 0.0376 per mm was given as a reasonable approximation of the linear attenuation coeficient
+#     of a thin sheet of teflon for a DN-9 beam
+#  C) Circular objects are the norm, thus, the aspect ratio is generally 1.0 and rotation (in radians) may 
+#     generally be set to 0.0.
+#  D) Smooting sigma is usually necessary to blend or feather the nodule into the background. Without smoothing,
+#     the feature may exhibit ringing after frequency processing. The smoothing factor will generally need to 
+#     increase in regions where there is litte relative x-ray attenuation.
+#  E) Thickness represents the maximum thickness of the nodule, it is typically 5-6 mm.
+#
+FEATURE_TYPE=Nodule
+FEATURE_LOCATION_X_PIXEL=100
+FEATURE_LOCATION_Y_PIXEL=100
+FEATURE_SIZE_PIXELS=100              
+FEATURE_ROTATION_RADS=0.0
+FEATURE_ASPECT_RATIO=1.0
+FEATURE_THICKNESS_MM=5.0
+FEATURE_ATTENUATION_PER_MM=0.0376
+FEATURE_SMOOTHING_SIGMA_PIXELS=5.0

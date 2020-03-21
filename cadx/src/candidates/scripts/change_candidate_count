@@ -1,0 +1,18 @@
+#!/bin/tcsh
+#
+# change_candidate_count : Truncate number of candidates in a .can file at max_count.
+#
+# usage:
+# change_candidate_count in_can_file max_count > out_can_file
+#
+# This script processes .can file in_can_file. If the number of candidates in in_can_file
+# is less than or equal to max_count, out_can_file will be identical to in_can_file.
+# If the number of candidates is greater than max_count, out_can_file will contain 
+# only the first max_count candidates, and the numCandidates: field will be set
+# to max_count.
+#
+
+cat $1 |\
+awk ' $1 == "numCandidates:" { if($2 > '$2') $2='$2'; } $1 == "candidateIndex:" { if($2 >= '$2') filter = 1; }  filter==0 { print $0; }'
+
+

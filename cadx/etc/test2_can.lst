@@ -1,0 +1,189 @@
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0025_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0025_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0025_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0025_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0025_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0037_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0037_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0037_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0037_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0037_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0042_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0042_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0042_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0042_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0042_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0044_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0044_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0044_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0044_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0044_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0045_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0045_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0045_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0045_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0045_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0046_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0046_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0046_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0046_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0046_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0050_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0050_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0050_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0050_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0050_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0051_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0051_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0051_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0051_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0051_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0055_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0055_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0055_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0055_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0055_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0056_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0056_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0056_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0056_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0056_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0057_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0057_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0057_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0057_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0057_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0058_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0058_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0058_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0058_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0058_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0061_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0061_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0061_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0061_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0061_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0061_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0061_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0061_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0061_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0061_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0062_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0062_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0062_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0062_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0062_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0064_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0064_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0064_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0064_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0064_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0065_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0065_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0065_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0065_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0065_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0066_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0066_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0066_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0066_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0066_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0068_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0068_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0068_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0068_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0068_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0072_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0072_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0072_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0072_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0072_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0078_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0078_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0078_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0078_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0078_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0080_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0080_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0080_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0080_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0080_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0082_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0082_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0082_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0082_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0082_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0083_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0083_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0083_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0083_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0083_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0086_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0086_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0086_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0086_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0086_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0088_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0088_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0088_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0088_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0088_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0089_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0089_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0089_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0089_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0089_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0096_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0096_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0096_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0096_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0096_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0099_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0099_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0099_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0099_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0099_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0100_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0100_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0100_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0100_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0100_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0101_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0101_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0101_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0101_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0101_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0102_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0102_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0102_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0102_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0102_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0107_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0107_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0107_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0107_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0107_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0108_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0108_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0108_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0108_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0108_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0109_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0109_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0109_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0109_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0109_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0110_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0110_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0110_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0110_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0110_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0112_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0112_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0112_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0112_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0112_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0115_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0115_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0115_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0115_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0115_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0117_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0117_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0117_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0117_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0117_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0119_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0119_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0119_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0119_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0119_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0123_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0123_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0123_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0123_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0123_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0124_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0124_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0124_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0124_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0124_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0128_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0128_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0128_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0128_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0128_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0130_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0130_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0130_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0130_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0130_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0133_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0133_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0133_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0133_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0133_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0134_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0134_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0134_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0134_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0134_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0135_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0135_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0135_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0135_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0135_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0141_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0141_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0141_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0141_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0141_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0142_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0142_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0142_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0142_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0142_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0143_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0143_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0143_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0143_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0143_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0151_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0151_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0151_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0151_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0151_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0153_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0153_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0153_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0153_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0153_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0156_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0156_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0156_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0156_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0156_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0157_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0157_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0157_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0157_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0157_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0160_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0160_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0160_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0160_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0160_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0161_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0161_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0161_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0161_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0161_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0166_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0166_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0166_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0166_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0166_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0168_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0168_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0168_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0168_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0168_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0170_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0170_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0170_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0170_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0170_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0171_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0171_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0171_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0171_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0171_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0174_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0174_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0174_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0174_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0174_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0176_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0176_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0176_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0176_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0176_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0178_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0178_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0178_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0178_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0178_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0183_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0183_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0183_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0183_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0183_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0189_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0189_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0189_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0189_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0189_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0193_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0193_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0193_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0193_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0193_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0198_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0198_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0198_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0198_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0198_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0200_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0200_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2003/TGH-EK0200_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0200_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0200_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0202_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0202_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2023/TGH-EK0202_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0202_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0202_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0203_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0203_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2033/TGH-EK0203_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0203_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0203_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0204_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0204_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2043/TGH-EK0204_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0204_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0204_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0207_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0207_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2073/TGH-EK0207_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0207_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0207_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0208_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0208_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2083/TGH-EK0208_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0208_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0208_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0210_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0210_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2103/TGH-EK0210_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0210_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0210_CO.png ]
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0211_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0211_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2113/TGH-EK0211_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0211_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0211_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0213_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0213_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2133/TGH-EK0213_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0213_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0213_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0214_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0214_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2143/TGH-EK0214_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0214_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0214_CO.png ] 
+
+[ -img J:/image/CADX/test2/Images/TGH-EK0217_CO.img -outCan Q:/schildkr/cadx/test2/can/TGH-EK0217_CO.can -inCan Q:/schildkr/cadx/test2/can_6_24_2173/TGH-EK0217_CO.can -hit J:/image/CADX/test2/GroundTruth/TGH-EK0217_CO.hit -mask J:/image/CADX/test2/lungMasks/TGH-EK0217_CO.png ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 

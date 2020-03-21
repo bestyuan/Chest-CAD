@@ -1,0 +1,53 @@
+
+
+# When debug is set to 1 diagnostic file are written
+# to the output directory.
+debug			1
+
+# Min and max codevalue of image
+minCodeValue		0	        
+maxCodeValue		4095
+	
+roiResolution		512
+roiSpacing		0.171	
+
+# Directory to write diagnostic files.
+outputDir		Q:/schildkr/cadx/tmp_correlation   
+
+# Default path of log file for processing information.
+logFileName		./cadx.log 
+
+
+# The maximum number of candidates to be processed from a CAN file.	
+maxCandidates		5
+	                                                  	                                                                                                  	
+# The number of templates followed by a list of template files.	 
+# The template file paths must be absolute or relative to
+# the current working directory.
+nNoduleTemplates		3
+		
+../data/templates/imgNoduleMorphTemplateSigma10.tif   1
+../data/templates/imgNoduleMorphTemplateSigma25.tif   1
+../data/templates/imgNoduleMorphTemplateSigma50.tif   1
+
+
+# The number of rib templates followed by a list of rib template files.	 
+# The template file paths must be absolute or relative to
+# the current working directory.
+nRibTemplates		4
+		
+../data/templates/imgRibMorphTemplate0.tif   
+../data/templates/imgRibMorphTemplate1.tif   
+../data/templates/imgRibMorphTemplate2.tif
+../data/templates/imgRibMorphTemplate3.tif
+
+
+# Aggresiveness of region growing.
+# Range between 0 and 1. 
+# The small the value the more a region is grown.
+regionGrowFraction	0.8
+
+
+
+
+

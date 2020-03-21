@@ -1,0 +1,31 @@
+#!/bin/tcsh
+#
+# sort_candidates : resort candidates in a .can file, by a given feature
+#
+# usage:
+# sort_candidates in_can_file feature_num > out_can_file
+#
+# This script examines .can file in_can_file, outputing a new can file except
+# that the order of the candidates is sorted according to the feature number
+# specified by feature_num. (feature_num is relative to the order of the
+# features appearing in the input can file, beginning with 1).
+#
+
+setenv TMPNAME1 `mktemp`
+setenv TMPNAME2 `mktemp`
+
+setenv SORTFIELD `expr $2 + 3`
+
+# first chop off header, and save to temp file
+
+cat $1 |\
+awk ' $1 == "endHeader:" {stop=1; print $0} stop==0 {print $0}' > $TMPNAME1
+
+cat $1 |\
+awk ' $1 == "endHeader:" { collect = 1; } $1 == "endCandidate:" { print $0; } $1 != "endCandidate:" && $1 !~ /^\#/ && collect == 1 && $1 != "endHeader:" { printf("%s|", $0); }'  |\
+sort -n -r +$SORTFIELD''.0 - |\
+tr '|' '\n' |\
+awk '$1 == "candidateIndex:" { print "#"; $2 = newnum++; print $0; } $1 != "candidateIndex:" { print $0; }' > $TMPNAME2
+
+cat $TMPNAME1 $TMPNAME2
+

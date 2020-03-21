@@ -1,0 +1,10 @@
+#!/bin/tcsh
+#
+# extract_test_features_data : extracts testing data from ccICD output, where
+#                              the data includes feature values
+#   
+# usage:
+# extract_test_features_data [input_file] > [output_file]
+
+cat $1 | grep 'training_fortest_data' | sed 's/training_fortest_data//g;'
+

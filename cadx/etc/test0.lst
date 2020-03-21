@@ -1,0 +1,172 @@
+
+[ -img J:/image/CADX/test0/Images/EK0002_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0002_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0002_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0002_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0002_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0003_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0003_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0003_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0003_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0003_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0004_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0004_0_PA_P_CR400_CO.img -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0004_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0004_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0004_0_PA_P_CR400.png ]       
+
+[ -img J:/image/CADX/test0/Images/EK0015_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0015_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0015_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0015_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0015_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0016_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0016_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0016_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0016_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0016_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0017_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0017_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0017_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0017_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0017_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0018_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0018_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0018_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0018_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0018_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0019_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0019_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0019_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0019_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0019_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0022_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0022_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0022_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0022_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0022_0_PA_P_CR400.png ]       
+
+[ -img J:/image/CADX/test0/Images/EK0023_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0023_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0023_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0023_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0023_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0026_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0026_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0026_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0026_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0026_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0028_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0028_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0028_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0028_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0028_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0030_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0030_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0030_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0030_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0030_0_PA_P_CR400.png ]         
+
+[ -img J:/image/CADX/test0/Images/EK0031_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0031_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0031_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0031_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0031_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0032_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0032_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0032_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0032_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0032_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0035_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0035_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0035_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0035_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0035_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0036_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0036_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0036_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0036_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0036_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0037_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0037_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0037_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0037_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0037_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0038_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0038_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0038_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0038_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0038_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0039_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0039_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0039_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0039_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0039_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0040_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0040_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0040_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0040_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0040_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0041_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0041_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0041_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0041_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0041_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0042_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0042_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0042_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0042_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0042_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0043_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0043_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0043_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0043_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0043_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0046_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0046_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0046_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0046_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0046_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0049_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0049_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0049_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0049_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0049_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0050_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0050_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0050_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0050_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0050_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0051_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0051_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0051_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0051_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0051_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0052_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0052_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0052_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0052_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0052_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0053_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0053_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0053_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0053_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0053_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0054_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0054_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0054_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0054_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0054_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0056_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0056_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0056_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0056_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0056_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0057_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0057_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0057_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0057_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0057_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0058_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0058_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0058_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0058_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0058_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0059_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0059_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0059_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0059_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0059_0_PA_P_CR400.png ]           
+[ -img J:/image/CADX/test0/Images/EK0060_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0060_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0060_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0060_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0060_0_PA_P_CR400.png ]       
+
+[ -img J:/image/CADX/test0/Images/EK0061_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0061_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0061_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0061_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0061_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0062_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0062_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0062_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0062_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0062_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0063_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0063_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0063_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0063_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0063_0_PA_P_CR400.png ]          
+
+[ -img J:/image/CADX/test0/Images/EK0065_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0065_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0065_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0065_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0065_0_PA_P_CR400.png ]             
+
+[ -img J:/image/CADX/test0/Images/EK0066_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0066_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0066_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0066_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0066_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0067_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0067_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0067_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0067_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0067_0_PA_P_CR400.png ]        
+
+[ -img J:/image/CADX/test0/Images/EK0068_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0068_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0068_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0068_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0068_0_PA_P_CR400.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0069_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0069_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0069_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0069_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0069_0_PA_P_CR400.png ]     
+
+[ -img J:/image/CADX/test0/Images/EK0070_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0070_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0070_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0070_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0070_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0071_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0071_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0071_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0071_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0071_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0074_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0074_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0074_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0074_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0074_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0075_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0075_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0075_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0075_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0075_0_PA_P_CR400.png ]        
+
+[ -img J:/image/CADX/test0/Images/EK0076_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0076_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0076_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0076_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0076_0_PA_P_CR400.png ]          
+
+[ -img J:/image/CADX/test0/Images/EK0077_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0077_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0077_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0077_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0077_0_PA_P_CR400.png ]  
+
+[ -img J:/image/CADX/test0/Images/EK0078_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0078_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0078_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0078_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0078_0_PA_P_CR400.png ]   
+
+[ -img J:/image/CADX/test0/Images/EK0080_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0080_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0080_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0080_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0080_0_PA_P_CR400.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0081_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0081_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0081_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0081_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0081_0_PA_P_CR400.png ]         
+
+[ -img J:/image/CADX/test0/Images/EK0082_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0082_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0082_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0082_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0082_0_PA_P_CR400.png ]       
+
+[ -img J:/image/CADX/test0/Images/EK0083_0_PA_CR800_CO.img -can Q:/schildkr/cadx/test/tmp/EK0083_0_PA_CR800_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0083_0_PA_CR800_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0083_0_PA_CR800_CO.hit -mask J:/image/CADX/lungMasks/EK0083_0_PA_CR800_CO.png ]         
+
+[ -img J:/image/CADX/test0/Images/EK0084_0_PA_CR800_CO.img -can Q:/schildkr/cadx/test/tmp/EK0084_0_PA_CR800_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0084_0_PA_CR800_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0084_0_PA_CR800_CO.hit -mask J:/image/CADX/lungMasks/EK0084_0_PA_CR800_CO.png ]    
+
+[ -img J:/image/CADX/test0/Images/EK0085_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0085_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0085_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0085_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0085_0_PA_P_CR400_CO.png ]       
+[ -img J:/image/CADX/test0/Images/EK0086_0_PA_P_CR400_CO.img -can Q:/schildkr/cadx/test/tmp/EK0086_0_PA_P_CR400_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0086_0_PA_P_CR400_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0086_0_PA_P_CR400_CO.hit -mask J:/image/CADX/lungMasks/EK0086_0_PA_P_CR400_CO.png ]      
+
+[ -img J:/image/CADX/test0/Images/EK0088_0_PA_CR800_CO.img -can Q:/schildkr/cadx/test/tmp/EK0088_0_PA_CR800_CO.can -cnl J:/image/CADX/test0/IntermediateResults/InitialCandidates/EK0088_0_PA_CR800_CO.cnl -hit J:/image/CADX/test0/GroundTruth/EK0088_0_PA_CR800_CO.hit -mask J:/image/CADX/lungMasks/EK0088_0_PA_CR800_CO.png ]      
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 

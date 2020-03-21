@@ -1,0 +1,61 @@
+
+# The algorithm expects that high density regions in the
+# object correspond to low code values in the input image.
+# For example, if the input image is displayed as is bones
+# appear dark. In this case set invert to 1.
+# If the image has been rendered in the standard way so
+# that high density regions of the object appear bright
+# set invert equal to 0.
+invert			0
+
+# The pixel spacing in mm at which the image is processed.
+# The input image is resized in order to achieve this aim.
+aimPixelSpacing	0.171
+
+# The dimension of ROIs that are cropped from the image.
+roiResolution		512
+
+
+# The maximum number of candidates to be processed from a CAN file.
+maxCandidates		140
+
+
+# The number of templates followed by a list of template files.	 
+# The template file paths must be absolute or relative to
+# the current working directory.
+nNoduleTemplates		2
+
+../data/templates/MediumNoduleTemplate_9_9_2003.tif	2
+../data/templates/MediumNoduleTemplate_9_9_2003.tif	3 
+
+
+# The number of rib templates followed by a list of rib template files.
+# The template file paths must be absolute or relative to
+# the current working directory.
+nRibAggregations	3
+nRibTemplates		7
+		
+../data/templates/RibTemplateTheta0_11_25_2003.tif
+../data/templates/RibTemplateTheta45_11_25_2003.tif
+../data/templates/RibTemplateThetaN45_11_25_2003.tif
+../data/templates/RibTemplateTheta22_11_25_2003.tif
+../data/templates/RibTemplateThetaN22_11_25_2003.tif
+../data/templates/RibTemplateTheta68_11_25_2003.tif
+../data/templates/RibTemplateThetaN68_11_25_2003.tif
+
+
+# Threshold for region support in Nodule-Rib image.
+regionSupportThreshold	10
+
+
+# Set to 1 to group candidates otherwise set to 0.
+group  1
+
+# The area overlap required for candidate to belong to the same group.
+maxOverlap  0.50
+
+# The maximum number of annotations in an image.
+maxAnnotations 10
+
+
+

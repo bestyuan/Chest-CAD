@@ -1,0 +1,17 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\preprocessing
+2
+d
+15:MorphPreprocessor.cpp|1|1047f6cd1f8|109e|5cae6a4c|f6ab4bfc65ae45069bbdb045f249c18b|0
+11:MatchedFilter.cpp|1|1047f6cc971|b26|181d3ccb|63ea4acc825d4539a25e0a33fd81c9bf|0
+11:StructRemover.cpp|1|1047f6cced7|916|7214b953|ed71e30134cb40ef932fe377e402f299|0
+c:Gradient.cpp|1|1047f6cd0ea|cac|e4e15e33|462d49706d754f5dbc26921bfc3c3c20|0
+11:Preprocessor2.cpp|1|1047f6cd307|13ed|5ce643c6|1f5c177aca034f95b31274213f6fd97a|0
+10:EdgeDetector.cpp|1|1047f6cc6be|657|bb98a6ee|0ba37eef8c524c10906d1e9b8293f2ae|0
+11:ScalingFilter.cpp|1|1047f6cca6c|1160|c315f11f|5c2c887833c84d8ba5a151804bc76429|0
+10:Preprocessor.cpp|1|1047f6cd00e|7e5|488784d7|a6277ba90e654430898b3cc2a0eb1649|0
+e:BlurFilter.cpp|1|1047f6cc704|554|b66877aa|e9bdef9eddb24390a4de15447ff6c143|0
+f:MorphFilter.cpp|1|1047f6ccb98|2e30|fab52bcc|f81669e57afd4a248ae9096f2c4cdb98|0
+16:MultiMatchedFilter.cpp|1|1047f6ccc4c|58a|8a8db815|b240fda9c4014f21bc97f7c411844e9e|0
+14:MultiMorphFilter.cpp|1|1047f6ccd97|121e|50feb402|e38411de57764c49870795f5109cfb84|0
+13:CurvatureFilter.cpp|1|1047f6cc84f|b73|ce093d93|19cbb1d109f34e8cac97ab98a99d79a1|0

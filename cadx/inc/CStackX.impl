@@ -1,0 +1,82 @@
+
+
+
+#include "CStackX.h"
+
+
+
+
+template <class TRex>
+CStackX<TRex>::CStackX() {
+    //call super second constructor with value of 1000
+
+    //create exception
+//    ex = new ArrayOutOfBounds();
+    vect = new TRex[ARRAY_MAX_SIZE];
+    
+    setMaxSize(ARRAY_MAX_SIZE);
+    top = -1;
+
+}
+
+template <class TRex>
+CStackX<TRex>::CStackX(long val) {
+ //   ex = new ArrayOutOfBounds();
+    setMaxSize(val);
+    vect = new TRex[arr_size];
+    top = -1;
+
+}
+
+template <class TRex>
+CStackX<TRex>::~CStackX()
+{
+    //delete array dynamically allocated
+    //delete ex;
+    delete[] vect;
+}
+
+template <class TRex>
+void CStackX<TRex>::push(TRex value)
+{
+    try {
+        if(top != arr_size) {
+            //top +=1;
+            vect[++top] = value;
+        }
+      //  else throw ex;
+    }
+    catch(...) {
+        exit(1);
+    }
+
+
+}
+
+template <class TRex>
+TRex CStackX<TRex>::pop()
+{
+ 
+       if(top != -1) return vect[top--];
+
+  
+
+}
+
+template <class TRex>
+TRex CStackX<TRex>::peek(long i) {
+ 
+        if(top != -1) return vect[top - i];
+  
+
+}
+
+template <class TRex>
+long CStackX<TRex>::getSize() {
+    return top + 1;
+}
+
+template <class TRex>
+void CStackX<TRex>::setMaxSize(long val) {
+    arr_size = val;
+}

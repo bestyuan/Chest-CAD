@@ -1,0 +1,9 @@
+#!/bin/tcsh
+#
+# extract_training_data : extracts training data from output of ccICD
+#   
+# usage:
+# extract_training_data [input_file] > [output_file]
+
+cat $1 | grep 'training_data' | sed 's/training_data//g;'
+

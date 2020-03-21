@@ -1,0 +1,15 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\msprojects\rollball
+2
+b
+c:rollball.cpp|1|1047f6c04d5|29b3|ca97a007|34d54938478d4e379cbea4688ea5260e|0
+c:rollball.ncb|1|1047f6c088c|e400|8fcaac5|3317bcceb8cb4b14a32483c34778b54c|0
+17:envelopecomputation.txt|1|1047f6c0222|0|0|6f8f604566a04e20aa59439808c8edac|0
+8:StdAfx.h|1|1047f6c0131|29b|f7ccbe9|51016df536b24c92a70aeba233ba7b04|0
+c:kespr_io.cpp|1|1047f6c0308|17bc|a1b864a8|dcbf2f2aad3f4332ab6b182d13775446|0
+c:rollball.plg|1|1047f6c0a31|551|9e5a884|29e1f10f1aa14a3e8f54ce2ad7ac0a6a|0
+c:rollball.dsw|1|1047f6c063d|21b|5df775ee|00383b0e7dee464996206bd1c8c06f0e|0
+a:kespr_io.h|1|1047f6c03ee|109e|e3abaf89|1f0b434fb08c4f369ccff82965d8200d|0
+c:rollball.opt|1|1047f6c0a1d|c200|81bf2cfb|7a7bb8e8a65e4fbcb148838c07c93678|0
+c:rollball.dsp|1|1047f6c056b|1250|e1c48358|997ef28688254fd1bddf3b8ae0835713|0
+a:StdAfx.cpp|1|1047f6c004b|127|ecea6370|0a4c188e95254bf4bb792a359a0f32e8|0

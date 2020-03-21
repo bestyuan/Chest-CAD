@@ -1,0 +1,11 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\util\decomposition
+2
+7
+e:contourclass.h|1|1047f6cc447|1de5|25bc9969|de57181583184587bea4c74fa18b73e7|0
+e:contour_pt.cpp|1|1047f6cc216|73f|5c3b1a89|7e0a20b061444edeb922b4f9e4cfb2b7|0
+c:contours.cpp|1|1047f6cc6a0|de47|2ff79a11|65e30b8e945e4481b28e1abf4abed2b5|0
+c:contour_pt.h|1|1047f6cc339|df3|d2b7dd82|51c3c4a966c5474fbf1d934bce55c063|0
+d:BoundingBox.h|1|1047f6cbf3b|9ac|50a5eb9f|89e9709e69cf4bdea59610afa37df739|0
+4:Pt.h|1|1047f6cc11c|2f6|ee3bea8e|76e07f4118b44e7f82a810d62bd218e0|0
+8:ConSeg.h|1|1047f6cc022|e70|fd9a6351|9349fe76e9c445799188f215ec04baae|0

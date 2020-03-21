@@ -1,0 +1,35 @@
+#!/bin/tcsh
+#
+# change_feature_choices : Create a new .can file with a subset of the features
+#                          of the input file.
+#
+# usage:
+# change_feature_choices in_can_file new_feature_count new_feature_list > out_can_file
+#
+# This script reads .can file in_can_file and outputs a new .can file that
+# contains only the features specified by new_feature_list. 
+#
+# new_feature_count must indicate the number of features desired in the new
+# .can file. new_feature_list is a list of new_feature_count space-delimited integers
+# indicating which feature "numbers" should be output. Feature "numbers" refer
+# to the order of the features in the original .can file, starting with one.
+# new_feature_list must be enclosed by quotes.
+#
+# For example, if input.can has 5 features for each candidate, coin, afum,
+# rdens, lvar, vloc, in that order, the following command writes a new .can
+# file called output.can that contains only the coin, lvar, and vloc features:
+#
+#   change_feature_choices input.can 3 '1 4 5'
+#
+# To accomplish this, the script changes the numFeatures: and flabels: field
+# in the header, and the ftrVector: field of each candidate.
+#
+# Note that the order of the features in the output can file is not
+# specified (it's not necessarily the order in the new_feature_list).
+#
+# See change_feature_choices_files to run this script on multiple can files at once.
+#
+
+cat $1 |\
+awk 'BEGIN { m=split("'"$3"'", b); } $1 == "ftrVector:" { n=split($0, a); printf("%s ", a[1]); for(i in b) { printf("%f ", a[b[i]+1]); } print "";  }  $1 == "numFeatures:" { if('$2' < $2) $2 = '$2'; print $0; } $1 != "flabels:" && $1 != "ftrVector:" && $1 != "numFeatures:" { print $0; } $1 == "flabels:" { n=split($0, a);  printf("%s ", a[1]); for(i in b) printf("%s ", a[b[i]+1]); print "";  } '
+

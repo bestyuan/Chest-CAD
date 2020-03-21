@@ -1,0 +1,103 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Cadx"=..\Cadx\Cadx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Cadx
+    ..\Cadx
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CalcFeatures"=..\CalcFeatures\CalcFeatures.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    CalcFeatures
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CalcFeaturesApp"=..\CalcFeaturesApp\CalcFeaturesApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    CalcFeaturesApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CalcFeaturesListApp"=..\CalcFeaturesListApp\CalcFeaturesListApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    CalcFeaturesListApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MakeTemplate"=.\MakeTemplate.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    MakeTemplate
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

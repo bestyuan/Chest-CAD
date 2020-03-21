@@ -1,0 +1,18 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\segmentation
+2
+e
+e:SegmenterA.cpp|1|1047f6cdc9c|2175|e83a417c|8970bd2631cd4fe0825762a01d478709|0
+14:SurfaceSegmenter.cpp|1|1047f6cde7d|3c0a|a7bcfd7f|2b4ef20ce01e428c962a36953b1bc512|0
+11:RegionSupport.cpp|1|1047f6cd9a3|c44|8db4b94b|8b22ca8002ac4a85916220ef4174557b|0
+11:Decomposition.cpp|1|1047f6cd68c|5ff|6111ba17|50f31f8126fd43d5a5259add44d1b355|0
+12:MorphSegmenter.cpp|1|1047f6cd7d6|2304|6abf6544|adfcd11344704541b5dc3b6fda4c5482|0
+d:Clusterer.cpp|1|1047f6cd5ce|1133|7fc807c4|4fe869828fdf4d57a819f9f5e37cf7b2|0
+11:ScaleSelector.cpp|1|1047f6cda75|215|c1dda61b|b732e77147764c4cb89438e487133096|0
+d:Segmenter.cpp|1|1047f6cdb7a|1f09|d9da6c95|2f3c0b1761a741b89ffd9415e9f2f032|0
+10:RegionGrower.cpp|1|1047f6cd8db|2e01|5a77dfbb|1ea08deb203449788bf038a84e66c268|0
+b:Cluster.cpp|1|1047f6cd4c9|50f|a7176cf0|e0fbbfde22754ea0926724b3b9914a49|0
+d:Watershed.cpp|1|1047f6cdfb3|16da|b363b8e4|feeff906dc254635b2a138a7170ac177|0
+f:SegFeatures.cpp|1|1047f6ce0a4|168b|ebf2734f|b71fe998d11f400fba027ed402f82ee8|0
+10:AltSegmenter.cpp|1|1047f6cd3ed|13f7|9eb1502a|b7c39fb721de4d3a8e45a4a146519a8a|0
+18:SurfaceDecomposition.cpp|1|1047f6cdd8d|c8e|dda8c70c|396d9222521246f6838269be129394b3|0

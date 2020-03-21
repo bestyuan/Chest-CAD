@@ -1,0 +1,14 @@
+#!/bin/tcsh
+#
+# strip_img_paths input_file > output_file
+#
+# This is NOT an automatic script. It was designed to remove directory paths
+# from the xraySourceID field, but note that you must customize the sed
+# command below for the specific path you wish to remove. This script
+# was once useful; perhaps it will be useful again.
+#
+
+cat $1 |\
+sed 's/G:\\ChestCad\\Test7\\Images\\//g;'
+
+

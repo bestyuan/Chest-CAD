@@ -1,0 +1,1948 @@
+#^DET V1.0
+operatingFPI: 3.9896907
+operatingTPF: 0.57798165
+operatingAimFPI: 4
+trainingFileID: C:\ChestCAD\Code\All.trn
+numImages: 291
+imageID: JPCLN001_CO.img
+imageNumCandidates: 4
+4
+19
+29
+64
+imageID: JPCLN002_CO.img
+imageNumCandidates: 5
+0
+2
+5
+13
+36
+imageID: JPCLN003_CO.img
+imageNumCandidates: 3
+3
+34
+52
+imageID: JPCLN004_CO.img
+imageNumCandidates: 5
+2
+8
+23
+24
+56
+imageID: JPCLN005_CO.img
+imageNumCandidates: 2
+0
+6
+imageID: JPCLN006_CO.img
+imageNumCandidates: 3
+7
+58
+59
+imageID: JPCLN007_CO.img
+imageNumCandidates: 9
+0
+2
+7
+10
+12
+17
+23
+28
+57
+imageID: JPCLN008_CO.img
+imageNumCandidates: 7
+3
+5
+20
+34
+37
+63
+66
+imageID: JPCLN009_CO.img
+imageNumCandidates: 2
+4
+49
+imageID: JPCLN010_CO.img
+imageNumCandidates: 2
+8
+20
+imageID: JPCLN011_CO.img
+imageNumCandidates: 3
+0
+35
+46
+imageID: JPCLN012_CO.img
+imageNumCandidates: 5
+5
+9
+40
+47
+61
+imageID: JPCLN013_CO.img
+imageNumCandidates: 2
+6
+48
+imageID: JPCLN014_CO.img
+imageNumCandidates: 7
+3
+5
+11
+22
+31
+40
+48
+imageID: JPCLN015_CO.img
+imageNumCandidates: 3
+6
+54
+62
+imageID: JPCLN016_CO.img
+imageNumCandidates: 4
+0
+5
+8
+65
+imageID: JPCLN017_CO.img
+imageNumCandidates: 1
+3
+imageID: JPCLN018_CO.img
+imageNumCandidates: 6
+0
+2
+3
+14
+36
+62
+imageID: JPCLN019_CO.img
+imageNumCandidates: 4
+3
+5
+51
+59
+imageID: JPCLN020_CO.img
+imageNumCandidates: 4
+6
+25
+30
+40
+imageID: JPCLN021_CO.img
+imageNumCandidates: 6
+0
+1
+37
+47
+56
+62
+imageID: JPCLN022_CO.img
+imageNumCandidates: 3
+0
+3
+8
+imageID: JPCLN023_CO.img
+imageNumCandidates: 3
+0
+44
+48
+imageID: JPCLN024_CO.img
+imageNumCandidates: 1
+1
+imageID: JPCLN025_CO.img
+imageNumCandidates: 4
+17
+33
+39
+53
+imageID: JPCLN026_CO.img
+imageNumCandidates: 7
+10
+21
+47
+52
+62
+64
+65
+imageID: JPCLN027_CO.img
+imageNumCandidates: 5
+24
+36
+43
+54
+66
+imageID: JPCLN028_CO.img
+imageNumCandidates: 6
+4
+7
+14
+16
+31
+47
+imageID: JPCLN029_CO.img
+imageNumCandidates: 5
+0
+7
+16
+26
+50
+imageID: JPCLN030_CO.img
+imageNumCandidates: 2
+1
+52
+imageID: JPCLN031_CO.img
+imageNumCandidates: 3
+2
+11
+20
+imageID: JPCLN032_CO.img
+imageNumCandidates: 2
+2
+41
+imageID: JPCLN033_CO.img
+imageNumCandidates: 2
+29
+32
+imageID: JPCLN034_CO.img
+imageNumCandidates: 4
+0
+3
+32
+50
+imageID: JPCLN035_CO.img
+imageNumCandidates: 3
+1
+19
+68
+imageID: JPCLN036_CO.img
+imageNumCandidates: 6
+14
+18
+31
+36
+54
+66
+imageID: JPCLN037_CO.img
+imageNumCandidates: 7
+16
+17
+25
+39
+44
+53
+58
+imageID: JPCLN038_CO.img
+imageNumCandidates: 3
+4
+8
+40
+imageID: JPCLN039_CO.img
+imageNumCandidates: 5
+0
+1
+34
+44
+65
+imageID: JPCLN040_CO.img
+imageNumCandidates: 8
+1
+2
+3
+5
+7
+18
+24
+33
+imageID: JPCLN041_CO.img
+imageNumCandidates: 2
+10
+23
+imageID: JPCLN042_CO.img
+imageNumCandidates: 4
+2
+5
+10
+28
+imageID: JPCLN043_CO.img
+imageNumCandidates: 3
+2
+35
+53
+imageID: JPCLN044_CO.img
+imageNumCandidates: 2
+1
+16
+imageID: JPCLN045_CO.img
+imageNumCandidates: 6
+7
+17
+27
+33
+60
+64
+imageID: JPCLN046_CO.img
+imageNumCandidates: 5
+4
+10
+16
+23
+46
+imageID: JPCLN047_CO.img
+imageNumCandidates: 9
+7
+13
+15
+28
+34
+37
+58
+62
+69
+imageID: JPCLN048_CO.img
+imageNumCandidates: 2
+0
+2
+imageID: JPCLN049_CO.img
+imageNumCandidates: 7
+3
+6
+9
+10
+19
+27
+54
+imageID: JPCLN050_CO.img
+imageNumCandidates: 4
+6
+16
+52
+54
+imageID: JPCLN051_CO.img
+imageNumCandidates: 2
+31
+57
+imageID: JPCLN052_CO.img
+imageNumCandidates: 3
+12
+18
+59
+imageID: JPCLN053_CO.img
+imageNumCandidates: 7
+2
+3
+5
+21
+27
+41
+53
+imageID: JPCLN054_CO.img
+imageNumCandidates: 3
+1
+9
+52
+imageID: JPCLN055_CO.img
+imageNumCandidates: 3
+3
+19
+27
+imageID: JPCLN056_CO.img
+imageNumCandidates: 6
+0
+2
+8
+20
+30
+55
+imageID: JPCLN057_CO.img
+imageNumCandidates: 5
+5
+11
+14
+16
+63
+imageID: JPCLN058_CO.img
+imageNumCandidates: 7
+0
+7
+10
+14
+21
+67
+69
+imageID: JPCLN059_CO.img
+imageNumCandidates: 2
+19
+42
+imageID: JPCLN060_CO.img
+imageNumCandidates: 3
+9
+29
+59
+imageID: JPCLN061_CO.img
+imageNumCandidates: 6
+5
+6
+7
+14
+50
+57
+imageID: JPCLN062_CO.img
+imageNumCandidates: 7
+0
+17
+20
+39
+56
+63
+65
+imageID: JPCLN063_CO.img
+imageNumCandidates: 7
+1
+4
+5
+13
+47
+52
+60
+imageID: JPCLN064_CO.img
+imageNumCandidates: 6
+2
+30
+31
+34
+35
+59
+imageID: JPCLN065_CO.img
+imageNumCandidates: 4
+4
+6
+12
+24
+imageID: JPCLN066_CO.img
+imageNumCandidates: 7
+1
+11
+18
+42
+59
+63
+69
+imageID: JPCLN067_CO.img
+imageNumCandidates: 4
+6
+17
+34
+37
+imageID: JPCLN068_CO.img
+imageNumCandidates: 6
+14
+16
+30
+61
+65
+67
+imageID: JPCLN069_CO.img
+imageNumCandidates: 1
+3
+imageID: JPCLN070_CO.img
+imageNumCandidates: 4
+12
+42
+53
+62
+imageID: JPCLN071_CO.img
+imageNumCandidates: 1
+17
+imageID: JPCLN072_CO.img
+imageNumCandidates: 3
+6
+10
+54
+imageID: JPCLN073_CO.img
+imageNumCandidates: 2
+21
+38
+imageID: JPCLN074_CO.img
+imageNumCandidates: 6
+1
+47
+54
+62
+63
+65
+imageID: JPCLN075_CO.img
+imageNumCandidates: 8
+3
+4
+13
+21
+41
+47
+48
+53
+imageID: JPCLN076_CO.img
+imageNumCandidates: 5
+2
+16
+30
+38
+58
+imageID: JPCLN077_CO.img
+imageNumCandidates: 5
+4
+13
+16
+63
+64
+imageID: JPCLN078_CO.img
+imageNumCandidates: 5
+20
+30
+36
+44
+51
+imageID: JPCLN079_CO.img
+imageNumCandidates: 8
+2
+3
+4
+17
+51
+56
+57
+65
+imageID: JPCLN080_CO.img
+imageNumCandidates: 5
+0
+15
+23
+57
+63
+imageID: JPCLN081_CO.img
+imageNumCandidates: 2
+62
+65
+imageID: JPCLN082_CO.img
+imageNumCandidates: 5
+10
+14
+20
+58
+60
+imageID: JPCLN083_CO.img
+imageNumCandidates: 5
+2
+21
+38
+61
+64
+imageID: JPCLN084_CO.img
+imageNumCandidates: 2
+18
+44
+imageID: JPCLN085_CO.img
+imageNumCandidates: 2
+31
+35
+imageID: JPCLN086_CO.img
+imageNumCandidates: 3
+8
+15
+24
+imageID: JPCLN087_CO.img
+imageNumCandidates: 2
+6
+57
+imageID: JPCLN088_CO.img
+imageNumCandidates: 6
+1
+7
+9
+25
+61
+68
+imageID: JPCLN089_CO.img
+imageNumCandidates: 8
+4
+25
+53
+58
+59
+62
+63
+66
+imageID: JPCLN090_CO.img
+imageNumCandidates: 3
+0
+6
+15
+imageID: JPCLN091_CO.img
+imageNumCandidates: 2
+6
+12
+imageID: JPCLN092_CO.img
+imageNumCandidates: 7
+2
+4
+13
+19
+29
+39
+66
+imageID: JPCLN093_CO.img
+imageNumCandidates: 10
+2
+3
+9
+10
+19
+23
+25
+29
+33
+56
+imageID: JPCLN094_CO.img
+imageNumCandidates: 5
+31
+41
+53
+56
+63
+imageID: JPCLN095_CO.img
+imageNumCandidates: 4
+1
+4
+10
+51
+imageID: JPCLN096_CO.img
+imageNumCandidates: 5
+2
+25
+52
+63
+64
+imageID: JPCLN097_CO.img
+imageNumCandidates: 2
+7
+41
+imageID: JPCLN098_CO.img
+imageNumCandidates: 12
+1
+2
+5
+11
+13
+22
+27
+41
+43
+44
+60
+67
+imageID: JPCLN099_CO.img
+imageNumCandidates: 4
+7
+11
+28
+34
+imageID: JPCLN100_CO.img
+imageNumCandidates: 5
+1
+2
+4
+11
+62
+imageID: JPCLN101_CO.img
+imageNumCandidates: 7
+2
+5
+6
+34
+45
+60
+68
+imageID: JPCLN102_CO.img
+imageNumCandidates: 5
+7
+10
+21
+28
+43
+imageID: JPCLN103_CO.img
+imageNumCandidates: 6
+9
+18
+21
+22
+33
+47
+imageID: JPCLN104_CO.img
+imageNumCandidates: 10
+7
+11
+23
+29
+35
+39
+48
+55
+68
+69
+imageID: JPCLN105_CO.img
+imageNumCandidates: 5
+12
+19
+29
+51
+62
+imageID: JPCLN106_CO.img
+imageNumCandidates: 2
+40
+67
+imageID: JPCLN107_CO.img
+imageNumCandidates: 2
+0
+29
+imageID: JPCLN108_CO.img
+imageNumCandidates: 2
+24
+48
+imageID: JPCLN109_CO.img
+imageNumCandidates: 6
+8
+20
+30
+31
+52
+54
+imageID: JPCLN110_CO.img
+imageNumCandidates: 6
+13
+14
+35
+40
+41
+45
+imageID: JPCLN111_CO.img
+imageNumCandidates: 8
+1
+5
+18
+29
+60
+61
+62
+64
+imageID: JPCLN112_CO.img
+imageNumCandidates: 4
+21
+33
+54
+55
+imageID: JPCLN113_CO.img
+imageNumCandidates: 3
+0
+7
+19
+imageID: JPCLN114_CO.img
+imageNumCandidates: 3
+8
+22
+36
+imageID: JPCLN115_CO.img
+imageNumCandidates: 2
+7
+55
+imageID: JPCLN116_CO.img
+imageNumCandidates: 2
+7
+42
+imageID: JPCLN117_CO.img
+imageNumCandidates: 3
+4
+14
+39
+imageID: JPCLN118_CO.img
+imageNumCandidates: 2
+10
+68
+imageID: JPCLN119_CO.img
+imageNumCandidates: 3
+17
+20
+51
+imageID: JPCLN120_CO.img
+imageNumCandidates: 13
+2
+16
+17
+20
+21
+24
+32
+42
+52
+57
+61
+68
+69
+imageID: JPCLN121_CO.img
+imageNumCandidates: 2
+18
+42
+imageID: JPCLN122_CO.img
+imageNumCandidates: 6
+8
+12
+17
+38
+56
+62
+imageID: JPCLN123_CO.img
+imageNumCandidates: 2
+1
+17
+imageID: JPCLN124_CO.img
+imageNumCandidates: 3
+13
+39
+57
+imageID: JPCLN125_CO.img
+imageNumCandidates: 2
+19
+22
+imageID: JPCLN126_CO.img
+imageNumCandidates: 6
+2
+3
+4
+13
+41
+61
+imageID: JPCLN127_CO.img
+imageNumCandidates: 2
+29
+56
+imageID: JPCLN128_CO.img
+imageNumCandidates: 2
+57
+61
+imageID: JPCLN129_CO.img
+imageNumCandidates: 7
+2
+5
+8
+15
+25
+45
+63
+imageID: JPCLN130_CO.img
+imageNumCandidates: 10
+0
+5
+13
+21
+41
+42
+48
+56
+58
+61
+imageID: JPCLN131_CO.img
+imageNumCandidates: 2
+13
+17
+imageID: JPCLN132_CO.img
+imageNumCandidates: 5
+0
+5
+7
+16
+21
+imageID: JPCLN133_CO.img
+imageNumCandidates: 1
+22
+imageID: JPCLN134_CO.img
+imageNumCandidates: 3
+17
+25
+56
+imageID: JPCLN135_CO.img
+imageNumCandidates: 6
+17
+23
+53
+59
+68
+69
+imageID: JPCLN136_CO.img
+imageNumCandidates: 5
+27
+30
+44
+52
+55
+imageID: JPCLN137_CO.img
+imageNumCandidates: 3
+2
+4
+34
+imageID: JPCLN138_CO.img
+imageNumCandidates: 3
+8
+25
+59
+imageID: JPCLN139_CO.img
+imageNumCandidates: 3
+14
+15
+19
+imageID: JPCLN140_CO.img
+imageNumCandidates: 7
+1
+3
+8
+9
+26
+27
+67
+imageID: JPCLN141_CO.img
+imageNumCandidates: 8
+5
+11
+18
+20
+25
+26
+58
+62
+imageID: JPCLN142_CO.img
+imageNumCandidates: 9
+0
+6
+13
+21
+28
+41
+47
+55
+65
+imageID: JPCLN143_CO.img
+imageNumCandidates: 7
+6
+8
+25
+40
+56
+59
+68
+imageID: JPCLN144_CO.img
+imageNumCandidates: 2
+52
+55
+imageID: JPCLN145_CO.img
+imageNumCandidates: 3
+1
+13
+14
+imageID: JPCLN146_CO.img
+imageNumCandidates: 7
+0
+4
+12
+25
+26
+53
+59
+imageID: JPCLN147_CO.img
+imageNumCandidates: 7
+3
+6
+11
+17
+19
+51
+59
+imageID: JPCLN148_CO.img
+imageNumCandidates: 11
+1
+3
+10
+15
+19
+26
+29
+40
+56
+60
+62
+imageID: JPCLN149_CO.img
+imageNumCandidates: 6
+13
+22
+25
+26
+28
+56
+imageID: JPCLN150_CO.img
+imageNumCandidates: 7
+15
+27
+35
+36
+38
+42
+60
+imageID: JPCLN151_CO.img
+imageNumCandidates: 3
+27
+38
+58
+imageID: JPCLN152_CO.img
+imageNumCandidates: 8
+18
+23
+26
+45
+47
+55
+57
+64
+imageID: JPCLN153_CO.img
+imageNumCandidates: 1
+41
+imageID: JPCLN154_CO.img
+imageNumCandidates: 1
+21
+imageID: EK0002_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+15
+23
+26
+32
+42
+58
+imageID: EK0003_0_PA_P_CR400_CO.img
+imageNumCandidates: 1
+49
+imageID: EK0004_0_PA_P_CR400_CO.img
+imageNumCandidates: 2
+25
+47
+imageID: EK0015_0_PA_P_CR400_CO.img
+imageNumCandidates: 15
+0
+6
+8
+9
+17
+18
+19
+23
+24
+41
+47
+51
+54
+57
+60
+imageID: EK0016_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+2
+14
+39
+imageID: EK0017_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+5
+21
+35
+56
+59
+imageID: EK0018_0_PA_P_CR400_CO.img
+imageNumCandidates: 1
+25
+imageID: EK0019_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+9
+12
+17
+35
+58
+imageID: EK0022_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+21
+23
+34
+imageID: EK0023_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+4
+21
+41
+imageID: EK0026_0_PA_P_CR400_CO.img
+imageNumCandidates: 2
+8
+30
+imageID: EK0028_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+0
+1
+18
+39
+54
+56
+62
+68
+69
+imageID: EK0030_0_PA_P_CR400_CO.img
+imageNumCandidates: 7
+2
+27
+29
+34
+38
+53
+56
+imageID: EK0031_0_PA_P_CR400_CO.img
+imageNumCandidates: 7
+19
+21
+26
+39
+40
+44
+54
+imageID: EK0032_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+0
+7
+19
+22
+54
+56
+imageID: EK0035_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+16
+23
+27
+38
+46
+48
+58
+59
+65
+imageID: EK0036_0_PA_P_CR400_CO.img
+imageNumCandidates: 4
+4
+10
+12
+20
+imageID: EK0037_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+5
+6
+7
+8
+12
+17
+18
+29
+53
+imageID: EK0038_0_PA_P_CR400_CO.img
+imageNumCandidates: 8
+0
+8
+21
+29
+40
+43
+54
+60
+imageID: EK0039_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+16
+20
+53
+imageID: EK0040_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+2
+38
+56
+imageID: EK0041_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+11
+17
+28
+37
+49
+58
+imageID: EK0042_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+14
+15
+19
+43
+55
+imageID: EK0043_0_PA_P_CR400_CO.img
+imageNumCandidates: 15
+0
+1
+5
+10
+12
+14
+18
+21
+29
+42
+48
+51
+57
+58
+61
+imageID: EK0046_0_PA_P_CR400_CO.img
+imageNumCandidates: 1
+4
+imageID: EK0048_0_PA_P_CR400_CO.img
+imageNumCandidates: 2
+9
+49
+imageID: EK0049_0_PA_P_CR400_CO.img
+imageNumCandidates: 1
+55
+imageID: EK0050_0_PA_P_CR400_CO.img
+imageNumCandidates: 4
+14
+20
+31
+62
+imageID: EK0051_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+8
+30
+62
+imageID: EK0052_0_PA_P_CR400_CO.img
+imageNumCandidates: 4
+0
+5
+8
+26
+imageID: EK0053_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+0
+7
+8
+26
+28
+45
+50
+58
+65
+imageID: EK0054_0_PA_P_CR400_CO.img
+imageNumCandidates: 4
+19
+45
+62
+64
+imageID: EK0056_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+24
+48
+66
+imageID: EK0057_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+2
+5
+24
+51
+56
+imageID: EK0058_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+0
+9
+14
+24
+25
+26
+29
+34
+66
+imageID: EK0059_0_PA_P_CR400_CO.img
+imageNumCandidates: 2
+47
+48
+imageID: EK0060_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+1
+19
+21
+22
+37
+55
+imageID: EK0061_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+4
+54
+61
+imageID: EK0062_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+13
+54
+64
+imageID: EK0063_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+15
+20
+37
+imageID: EK0065_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+11
+18
+41
+imageID: EK0066_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+1
+20
+42
+imageID: EK0067_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+2
+11
+31
+imageID: EK0068_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+2
+32
+55
+imageID: EK0069_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+0
+11
+35
+47
+52
+imageID: EK0070_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+26
+27
+49
+56
+60
+61
+imageID: EK0071_0_PA_P_CR400_CO.img
+imageNumCandidates: 3
+0
+27
+30
+imageID: EK0074_0_PA_P_CR400_CO.img
+imageNumCandidates: 9
+0
+14
+21
+42
+43
+47
+54
+58
+60
+imageID: EK0075_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+1
+6
+12
+20
+56
+66
+imageID: EK0076_0_PA_P_CR400_CO.img
+imageNumCandidates: 2
+5
+9
+imageID: EK0077_0_PA_P_CR400_CO.img
+imageNumCandidates: 6
+12
+21
+53
+57
+58
+60
+imageID: EK0078_0_PA_P_CR400_CO.img
+imageNumCandidates: 4
+13
+24
+61
+66
+imageID: EK0080_0_PA_P_CR400_CO.img
+imageNumCandidates: 8
+1
+14
+22
+36
+54
+58
+60
+62
+imageID: EK0081_0_PA_P_CR400_CO.img
+imageNumCandidates: 10
+0
+6
+10
+12
+20
+41
+45
+46
+61
+66
+imageID: EK0082_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+1
+22
+26
+34
+66
+imageID: EK0083_0_PA_CR800_CO.img
+imageNumCandidates: 5
+2
+3
+8
+9
+55
+imageID: EK0084_0_PA_CR800_CO.img
+imageNumCandidates: 4
+7
+8
+9
+38
+imageID: EK0085_0_PA_P_CR400_CO.img
+imageNumCandidates: 5
+0
+3
+8
+16
+19
+imageID: EK0086_0_PA_P_CR400_CO.img
+imageNumCandidates: 1
+52
+imageID: EK0088_0_PA_CR800_CO.img
+imageNumCandidates: 6
+1
+17
+26
+30
+40
+60
+imageID: TGH-EK0025_CO.img
+imageNumCandidates: 4
+0
+5
+20
+56
+imageID: TGH-EK0037_CO.img
+imageNumCandidates: 1
+1
+imageID: TGH-EK0042_CO.img
+imageNumCandidates: 7
+4
+11
+12
+23
+33
+50
+57
+imageID: TGH-EK0044_CO.img
+imageNumCandidates: 4
+23
+31
+43
+61
+imageID: TGH-EK0045_CO.img
+imageNumCandidates: 4
+0
+2
+33
+51
+imageID: TGH-EK0046_CO.img
+imageNumCandidates: 2
+20
+35
+imageID: TGH-EK0050_CO.img
+imageNumCandidates: 2
+4
+51
+imageID: TGH-EK0051_CO.img
+imageNumCandidates: 3
+3
+30
+40
+imageID: TGH-EK0055_CO.img
+imageNumCandidates: 4
+6
+7
+10
+52
+imageID: TGH-EK0056_CO.img
+imageNumCandidates: 4
+0
+16
+19
+20
+imageID: TGH-EK0057_CO.img
+imageNumCandidates: 5
+0
+37
+39
+61
+68
+imageID: TGH-EK0058_CO.img
+imageNumCandidates: 3
+6
+7
+16
+imageID: TGH-EK0061_CO.img
+imageNumCandidates: 4
+7
+31
+33
+40
+imageID: TGH-EK0062_CO.img
+imageNumCandidates: 3
+10
+39
+56
+imageID: TGH-EK0064_CO.img
+imageNumCandidates: 3
+2
+30
+59
+imageID: TGH-EK0065_CO.img
+imageNumCandidates: 6
+3
+6
+25
+35
+39
+47
+imageID: TGH-EK0066_CO.img
+imageNumCandidates: 6
+3
+7
+14
+16
+20
+31
+imageID: TGH-EK0068_CO.img
+imageNumCandidates: 7
+2
+17
+23
+30
+49
+54
+68
+imageID: TGH-EK0072_CO.img
+imageNumCandidates: 2
+7
+12
+imageID: TGH-EK0078_CO.img
+imageNumCandidates: 4
+5
+19
+21
+31
+imageID: TGH-EK0080_CO.img
+imageNumCandidates: 5
+4
+8
+21
+22
+31
+imageID: TGH-EK0082_CO.img
+imageNumCandidates: 2
+0
+14
+imageID: TGH-EK0083_CO.img
+imageNumCandidates: 2
+50
+51
+imageID: TGH-EK0086_CO.img
+imageNumCandidates: 3
+0
+4
+54
+imageID: TGH-EK0088_CO.img
+imageNumCandidates: 6
+43
+44
+61
+63
+66
+67
+imageID: TGH-EK0089_CO.img
+imageNumCandidates: 8
+3
+8
+18
+24
+29
+36
+41
+56
+imageID: TGH-EK0096_CO.img
+imageNumCandidates: 4
+8
+13
+66
+67
+imageID: TGH-EK0099_CO.img
+imageNumCandidates: 1
+48
+imageID: TGH-EK0100_CO.img
+imageNumCandidates: 10
+16
+24
+25
+27
+28
+35
+37
+39
+63
+64
+imageID: TGH-EK0101_CO.img
+imageNumCandidates: 6
+0
+9
+12
+21
+29
+69
+imageID: TGH-EK0102_CO.img
+imageNumCandidates: 4
+2
+29
+40
+68
+imageID: TGH-EK0107_CO.img
+imageNumCandidates: 0
+imageID: TGH-EK0108_CO.img
+imageNumCandidates: 7
+3
+12
+18
+19
+46
+49
+68
+imageID: TGH-EK0109_CO.img
+imageNumCandidates: 6
+1
+6
+12
+17
+22
+35
+imageID: TGH-EK0110_CO.img
+imageNumCandidates: 2
+32
+50
+imageID: TGH-EK0112_CO.img
+imageNumCandidates: 13
+2
+12
+20
+22
+30
+32
+38
+41
+52
+59
+62
+63
+68
+imageID: TGH-EK0115_CO.img
+imageNumCandidates: 5
+18
+31
+58
+65
+68
+imageID: TGH-EK0117_CO.img
+imageNumCandidates: 5
+15
+22
+32
+38
+60
+imageID: TGH-EK0119_CO.img
+imageNumCandidates: 4
+2
+6
+29
+68
+imageID: TGH-EK0123_CO.img
+imageNumCandidates: 3
+1
+14
+32
+imageID: TGH-EK0124_CO.img
+imageNumCandidates: 6
+32
+35
+46
+50
+55
+58
+imageID: TGH-EK0128_CO.img
+imageNumCandidates: 3
+1
+7
+29
+imageID: TGH-EK0130_CO.img
+imageNumCandidates: 13
+0
+1
+8
+15
+21
+25
+28
+30
+31
+32
+37
+63
+69
+imageID: TGH-EK0133_CO.img
+imageNumCandidates: 5
+0
+1
+9
+31
+56
+imageID: TGH-EK0134_CO.img
+imageNumCandidates: 2
+39
+55
+imageID: TGH-EK0135_CO.img
+imageNumCandidates: 3
+29
+35
+53
+imageID: TGH-EK0141_CO.img
+imageNumCandidates: 6
+7
+8
+19
+45
+48
+51
+imageID: TGH-EK0142_CO.img
+imageNumCandidates: 6
+7
+15
+28
+34
+47
+48
+imageID: TGH-EK0143_CO.img
+imageNumCandidates: 10
+0
+2
+3
+7
+9
+12
+22
+23
+25
+47
+imageID: TGH-EK0151_CO.img
+imageNumCandidates: 4
+5
+12
+29
+53
+imageID: TGH-EK0153_CO.img
+imageNumCandidates: 7
+8
+11
+16
+25
+46
+65
+66
+imageID: TGH-EK0156_CO.img
+imageNumCandidates: 0
+imageID: TGH-EK0157_CO.img
+imageNumCandidates: 4
+0
+1
+25
+61
+imageID: TGH-EK0160_CO.img
+imageNumCandidates: 7
+1
+8
+10
+11
+27
+28
+66
+imageID: TGH-EK0161_CO.img
+imageNumCandidates: 3
+0
+15
+29
+imageID: TGH-EK0166_CO.img
+imageNumCandidates: 5
+17
+27
+40
+55
+59
+imageID: TGH-EK0168_CO.img
+imageNumCandidates: 3
+23
+24
+29
+imageID: TGH-EK0170_CO.img
+imageNumCandidates: 3
+5
+13
+28
+imageID: TGH-EK0171_CO.img
+imageNumCandidates: 3
+3
+4
+5
+imageID: TGH-EK0174_CO.img
+imageNumCandidates: 7
+0
+7
+24
+28
+51
+57
+61
+imageID: TGH-EK0176_CO.img
+imageNumCandidates: 4
+12
+23
+26
+62
+imageID: TGH-EK0178_CO.img
+imageNumCandidates: 3
+7
+23
+27
+imageID: TGH-EK0183_CO.img
+imageNumCandidates: 7
+3
+13
+14
+15
+17
+39
+53
+imageID: TGH-EK0189_CO.img
+imageNumCandidates: 11
+0
+1
+15
+23
+27
+36
+38
+44
+52
+57
+64
+imageID: TGH-EK0193_CO.img
+imageNumCandidates: 12
+1
+2
+4
+10
+31
+37
+47
+50
+51
+54
+59
+62
+imageID: TGH-EK0198_CO.img
+imageNumCandidates: 5
+1
+15
+37
+58
+63
+imageID: TGH-EK0200_CO.img
+imageNumCandidates: 8
+3
+8
+15
+22
+39
+49
+56
+59
+imageID: TGH-EK0202_CO.img
+imageNumCandidates: 2
+8
+16
+imageID: TGH-EK0203_CO.img
+imageNumCandidates: 5
+0
+19
+23
+44
+57
+imageID: TGH-EK0204_CO.img
+imageNumCandidates: 3
+9
+28
+58
+imageID: TGH-EK0207_CO.img
+imageNumCandidates: 3
+3
+12
+14
+imageID: TGH-EK0208_CO.img
+imageNumCandidates: 5
+3
+4
+12
+34
+43
+imageID: TGH-EK0210_CO.img
+imageNumCandidates: 2
+1
+38
+imageID: TGH-EK0211_CO.img
+imageNumCandidates: 6
+4
+7
+12
+15
+17
+41
+imageID: TGH-EK0213_CO.img
+imageNumCandidates: 3
+35
+44
+59
+imageID: TGH-EK0214_CO.img
+imageNumCandidates: 7
+5
+8
+26
+31
+37
+58
+61
+imageID: TGH-EK0217_CO.img
+imageNumCandidates: 5
+12
+29
+31
+35
+49

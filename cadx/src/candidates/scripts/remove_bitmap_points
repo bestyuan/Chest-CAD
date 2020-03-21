@@ -1,0 +1,19 @@
+#!/bin/tcsh
+#
+# removes coordinates of nodule masks or boundaries from a .can file
+#
+# usage: 
+# remove_bitmap_points [input_can_file] > out_can_file
+#
+# This script reads in input_can_file and outputs it to the standard output, removing
+# any nodule boundary or bitmap coordinates. It also sets the nPoints: field to 0.
+#
+# This script is useful because the bitmap coordinates can make .can files *enormous*
+# and make reading them be very inefficient. If the bitmap coordinates are not needed,
+# this script quickly removes them, allowing more efficient processing of the file.
+#
+
+cat $1 |\
+awk ' $1 == "nPoints:" { skip = 1; printf("nPoints: 0\n"); } $1 != "nPoints:" && skip==0 { print $0; } $1 ~ /endCandidate/ {skip=0; print $0;}' 
+
+

@@ -1,0 +1,8 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\util\canny
+2
+4
+8:pgm_io.c|1|1047f6ca877|299c|d02d260a|4c27315f861e425fb89c0df48087e400|0
+c:hysteresis.c|1|1047f6ca7a5|349b|37f6a21a|efffbfb0fff043768cbbe71c78d7ce66|0
+c:canny_edge.c|1|1047f6ca6d2|582e|3b09ac63|085acc9cd6c747c2bc3798f1567dc362|0
+b:Readme.html|1|1047f6ca560|78e|4f53781d|ea1fcbfc17094f668c521544d73aeca9|0

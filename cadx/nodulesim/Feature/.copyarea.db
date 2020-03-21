@@ -1,0 +1,17 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\nodulesim\Feature
+2
+d
+b:Feature.cpp|1|1047fbc2970|0|0|94d7202bb9364803b8d4d59c1d3b9898|0
+c:Template.cpp|1|1047fbc34be|0|0|5c36dcc2d9c3499184735dc60dedfa0b|0
+10:Interstitial.cpp|1|1047fbc2ef4|0|0|87e71841b79e43cca7f39e3e082e779b|0
+8:StdAfx.h|1|1047fbc33cd|0|0|b800c07ad19a47f9bc5367c4a6241cc9|0
+15:FeatureDescriptor.cpp|1|1047fbc2d27|0|0|feaa661edc104ccba6d218c2c6842d32|0
+15:SmoothingTemplate.cpp|1|1047fbc31f7|0|0|6afd497e98904fab9f0ccf144c3f1941|0
+b:Feature.dsw|1|1047fbc2b28|219|a1c874de|3ab8fac3381e455995cada9dd3aad36a|0
+9:Feature.h|1|1047fbc2c0f|0|0|8d41ec89683c4b98b0115b133e829951|0
+13:FeatureTemplate.cpp|1|1047fbc2e03|0|0|247aa966b0bd490d8803b99512fd5e1f|0
+a:Nodule.cpp|1|1047fbc2ff8|0|0|81b4e52cccf343c6a214ac63074421ee|0
+a:Readme.txt|1|1047fbc30fc|0|0|1760a858b41f491aa1fae9572596725f|0
+b:Feature.dsp|1|1047fbc2a42|e00|7a42ff0c|d798ae7047e749cfa0d8ac0877074732|0
+a:StdAfx.cpp|1|1047fbc32f1|0|0|a0ac79b0f51a4234a8b9c87400c17da7|0

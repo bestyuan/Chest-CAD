@@ -1,0 +1,179 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Annotate"=..\Annotate\Annotate.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Annotate
+    ..\Annotate
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "AnnotateApp2"=..\AnnotateApp2\AnnotateApp2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    AnnotateApp2
+    ..\AnnotateApp2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Cadx"=..\Cadx\Cadx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Cadx
+    ..\Cadx
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CalcFeaturesListApp"=..\CalcFeaturesListApp\CalcFeaturesListApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    CalcFeaturesListApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ChestCadApp"=..\ChestCadApp\ChestCadApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    ChestCadApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ClassifierApp"=..\ClassifierApp\ClassifierApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    ClassifierApp
+    ..\ClassifierApp
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Convert"=..\Convert\Convert.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Convert
+    ..\Convert
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FeatureAnalysis"=..\FeatureAnalysis\FeatureAnalysis.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    FeatureAnalysis
+    ..\FeatureAnalysis
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "IcdSegApp"=.\IcdSegApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    IcdSegApp
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

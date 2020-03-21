@@ -1,0 +1,14 @@
+
+num_its: 25
+shape_limit: 0.99999
+limit_method: cpnt
+texture_limit: 0.99999
+tex_limit_method: cpnt
+coherence_start: 2
+
+s_res_width: 3
+s_res_length: 7
+s_scale_width: 1.0
+s_scale_length: 1.5
+max_tex_samp: 1
+interp_tex_samps: off

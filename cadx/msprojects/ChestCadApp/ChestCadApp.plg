@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ChestCadApp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\chnshn\AppData\Local\Temp\RSPDC36.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../inc" /I "../../lib/IEM/version-233/inc" /I "../../lib/EKC/inc" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /Fp"Release/ChestCadApp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\图像数据\ORI-UofC-Chest-CAD\cadx\src\apps\ChestCadApp.cpp"
+]
+Creating command line "cl.exe @C:\Users\chnshn\AppData\Local\Temp\RSPDC36.tmp" 
+Creating temporary file "C:\Users\chnshn\AppData\Local\Temp\RSPDC47.tmp" with contents
+[
+Cadx.lib ..\..\lib\ASMLibrary\Release\ASMLibrary.lib ..\..\lib\Via\lib\Release\Via.lib ..\..\lib\Ekc\lib\Ekc.lib Iem.lib IemViaIO.lib DicomMRIIOLibrary.lib coding.vc6{i13r0}.lib element.vc6{i13r0}.lib KdtNTWrappers.lib types.vc6{i13r0}.lib "Dlugosz Repertoire Classics.vc6{pb6+6}.lib" /nologo /subsystem:console /profile /debug /machine:I386 /force /out:"../../bin/ChestCadApp.exe" /libpath:"../../lib/" /libpath:"../../lib/IEM/Version-233/lib" /libpath:"..\..\lib\dicom\DicomMRIIOLibrary\Release" /libpath:"..\..\lib\dicom\kfc_i3r2\kfc\Dependant_Libs\Repertoire\compile.vc6\Release" /libpath:"..\..\lib\dicom\kdt_i13\Kodak DICOM Toolkit\dicom_toolkit\compile.vc6\bin_Release" 
+".\Release\ChestCadApp.obj"
+"\图像数据\ORI-UofC-Chest-CAD\cadx\lib\Cadx.lib"
+]
+Creating command line "link.exe @C:\Users\chnshn\AppData\Local\Temp\RSPDC47.tmp"
+<h3>Output Window</h3>
+Compiling...
+ChestCadApp.cpp
+Linking...
+Via.lib(tif_win32.obj) : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Via.lib(tif_win32.obj) : error LNK2001: unresolved external symbol __imp__GetFocus@0
+Via.lib(tif_win32.obj) : error LNK2001: unresolved external symbol __imp__wvsprintfA@12
+Via.lib(tif_win32.obj) : error LNK2001: unresolved external symbol __imp__wsprintfA
+../../bin/ChestCadApp.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+
+
+
+<h3>Results</h3>
+ChestCadApp.exe - 4 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

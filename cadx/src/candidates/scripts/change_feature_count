@@ -1,0 +1,23 @@
+#!/bin/tcsh
+#
+# change_feature_count : Truncate number of features in a .can file to max_count.
+#
+# usage:
+# change_feature_count in_can_file max_count > out_can_file
+#
+# This script processes .can file in_can_file. If the number of features in in_can_file
+# is less than max_count, out_can_file will be identical to in_can_file.
+# If the number of features is greater than max_count, out_can_file will contain 
+# only the first max_count features for each candidate, and the numFeatures: and
+# flabels: fields will be appropriately updated.
+#
+# This script is useful if you want to try, for example, training a classifier
+# using only a few of the available features, and the features you want to try
+# happen to be the first ones listed for each candidate. If you want to pluck
+# out specific (non-consecutive) features, use change_feature_choices instead.
+#
+# See change_feature_count_files to run this script on multiple can files at once.
+#
+
+cat $1 |\
+awk '$1 == "ftrVector:" { n=split($0, a); printf("%s ", a[1]); for(i=2; i<=n && i <= '$2'+1; i++) printf("%f ", a[i]); print "";  } $1 == "numFeatures:" { if('$2' < $2) $2 = '$2'; print $0; } $1 != "flabels:" && $1 != "ftrVector:" && $1 != "numFeatures:" { print $0; } $1 == "flabels:" { n=split($0, a); printf("%s ", a[1]); for(i=2; i<=n && i <= '$2'+1; i++) printf("%s ", a[i]); print "";  } '

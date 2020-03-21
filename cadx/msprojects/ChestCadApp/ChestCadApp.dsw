@@ -1,0 +1,119 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Cadx"=..\Cadx\Cadx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Cadx
+    ..\Cadx
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ChestCadApp"=.\ChestCadApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    ChestCadApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FeatureAnalysis"=..\FeatureAnalysis\FeatureAnalysis.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    FeatureAnalysis
+    ..\FeatureAnalysis
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "IcdSegApp"=..\IcdSegApp\IcdSegApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    IcdSegApp
+    ..\IcdSegApp
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LungMaskApp"=..\LungMaskApp\LungMaskApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    LungMaskApp
+    ..\..
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Test"=..\Test\Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Test
+    ..\Test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Cadx
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

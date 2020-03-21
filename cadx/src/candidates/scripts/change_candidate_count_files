@@ -1,0 +1,27 @@
+#!/bin/tcsh
+#
+# change_candidate_count_files : Truncate number of candidates of each .can file to max_count, for a directory
+#                                of .can files.
+#
+# usage:
+# change_candidate_count in_directory out_directory max_count
+#
+# This script runs change_candidate_count on all can files in directory in_directory,
+# placing the output of each run in out_directory. See change_candidate_count for
+# more information.
+#
+echo here
+
+foreach i ( $1/*.can )
+
+setenv TMPFILE3 `mktemp`
+
+echo $i 
+
+echo $TMPFILE3
+sort_candidates $i > $TMPFILE3
+change_candidate_count $TMPFILE3 $3 > $2/`basename $i`
+
+
+
+end

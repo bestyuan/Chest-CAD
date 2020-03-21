@@ -1,0 +1,396 @@
+//
+//  (c) Copyright Eastman Kodak Company 
+//  343 State Street
+//  Rochester, NY 14650
+//  All rights reserved
+//
+
+
+
+
+#include "Vector.h"
+
+
+template <class VType>
+short Vector<VType>::Allocate_Memory()
+{
+    Width = Max_x - Min_x + 1; 
+    Size = Width;
+    Bytes = sizeof(VType) * Size;
+
+    if (NULL == Data)
+    {
+        try
+        {
+            Data = new VType[Size]; 
+        }
+        catch (...)
+        {
+        }
+        if (NULL == Data)
+        {
+            return -1;
+        }
+        Own = 1;
+    }
+    else
+    {
+        Own = 0;
+    }
+    
+    Offset = Data - Min_x;
+
+    Marker = Data;
+
+    return 0;
+}
+
+
+template <class VType>
+void Vector<VType>::Initialize()
+{
+    Data = NULL;
+    Offset = NULL;
+    Marker = NULL;
+    Min_x = 0;
+    Max_x = 0; 
+    Width = 0;
+    Own = 0; 
+    Size = 0;
+    Bytes = 0; 
+}
+
+
+template <class VType>
+Vector<VType>::Vector(long _Min_x, long _Max_x)
+{
+   Initialize();
+
+   Min_x = _Min_x;
+   Max_x = _Max_x; 
+   
+   Allocate_Memory();
+}
+
+
+template <class VType>
+Vector<VType>::Vector(const Vector<VType>& V)
+{
+    Initialize();
+
+    Min_x = V.Min_x;
+    Max_x = V.Max_x; 
+   
+    Allocate_Memory();
+
+    Copy(V);
+}
+
+
+template <class VType>
+void Vector<VType>::Copy(const Vector<VType>& V)
+{
+    // no data to copy!
+    if (NULL == V.Data)
+        return;
+
+    // number of bytes doesn't match, copying data could overflow
+    // (or underflow). I'm not sure if the intent of Copy() is to trash
+    // the destination and replace with V or not. Here, we just check. (KRD)
+    if (V.Bytes != Bytes)
+        return;
+
+    memcpy((void *)Data, (void *)V.Data, Bytes);
+}
+
+
+template <class VType>
+short Vector<VType>::Create(long _Min_x, long _Max_x)
+{
+   Initialize();
+
+   Min_x = _Min_x;
+   Max_x = _Max_x; 
+   
+   return Allocate_Memory();
+}
+
+
+template <class VType>
+Vector<VType>& Vector<VType>::Clone()
+{  
+   Vector<VType> *pV_clone = Vector<VType>::Set_Pointer(Min_x, Max_x);
+
+   pV_clone->Copy(*this);
+
+   return *pV_clone; 
+}
+
+
+template <class VType>
+Vector<VType>* Vector<VType>::Set_Pointer(long _Min_x, long _Max_x)
+{
+    Vector<VType>* Ptr;  
+
+    Ptr = new Vector<VType>;
+    if (NULL == Ptr)
+    {
+        return NULL;
+    }
+
+    Ptr->Initialize();
+    Ptr->Min_x = _Min_x;
+    Ptr->Max_x = _Max_x; 
+
+    if (Ptr->Allocate_Memory() != 0)
+    {
+        delete Ptr;
+        return NULL;
+    }
+    else
+    {
+        return Ptr;
+    }
+}
+
+template <class VType>
+Vector<VType>& Vector<VType>::operator=(const Vector<VType>& V)
+{
+    // check self assignment
+    if (this == &V)
+    {
+        return *this;
+    }
+
+    //
+    //  We have Data and we Own it.
+    //  Destroy it.
+    //
+    if ((NULL != Data) && Own)
+    {
+        Free();
+    }
+
+    Min_x = V.Min_x;
+    Max_x = V.Max_x; 
+
+    //
+    //  If the source vector doesn't own it's memory, neither will
+    //  the one we're creating here via operator=
+    //
+    Own = V.Own;
+
+    if (Allocate_Memory() != 0)
+    {
+        return *this;
+    }
+   
+    Copy(V);
+
+    return *this; 
+}
+
+
+template <class VType>
+void Vector<VType>::Free()
+{
+    if (NULL != Data && Own)
+    {
+        delete[] Data; 
+        Data = NULL;
+    }
+    Initialize();
+}
+
+
+template <class VType>
+double Vector<VType>::Mean()
+{
+   short k;
+   double Sum = 0;
+
+   for(k = 0; k < Width; k++) Sum += Data[k];
+
+   return Sum / (double)Width;
+}
+
+
+template <class VType>
+void Vector<VType>::Set(VType V)
+{
+   long x;
+
+   for(x = Min_x; x <= Max_x; x++) *Element(x) = V;    
+}
+
+
+template <class VType>
+void Vector<VType>::Make_Square_Table()
+{
+   long x;
+
+   for(x = Min_x; x <= Max_x; x++) *Element(x) = x * x;    
+}
+
+
+template <class VType>
+double Vector<VType>::Inner_Product(Vector<VType>& V)
+{
+   long k;
+   double Sum = 0;
+
+   for(k = 0; k < Width; k++) Sum += Data[k] * V.Data[k];
+
+   return Sum;
+}
+
+
+template <class VType>
+double Vector<VType>::Distance2(Vector<VType>& V)
+{
+   long k;
+   double Sum = 0;
+
+   for(k = 0; k < Width; k++) Sum += SQUARE(Data[k] - V.Data[k]);
+
+   return Sum;
+}
+
+
+template <class VType>
+short Vector<VType>::SameAs(Vector<VType>& V)
+{
+   long k;
+
+   for(k = 0; k < Width; k++) if(Data[k] != V.Data[k]) return FALSE;
+
+   return 1;
+}
+
+
+template <class VType>
+double Vector<VType>::Smooth()
+{
+   long k;
+
+   Vector<VType> V = *this;
+
+   for(k = Min_x + 1; k < Max_x; k++)
+   { 
+     Val(k) = (V.Val(k - 1) +  2 * V.Val(k) + V.Val(k + 1)) / 4.0;
+   }
+
+   return 3.0;
+}
+
+
+template <class VType>
+short Vector<VType>::Read_File(const char *FileName)
+{
+   long x;
+   ifstream S;
+
+   S.open(FileName);
+
+   if(!S) return FALSE;
+
+   S >> Min_x >> Max_x;
+
+   Allocate_Memory();
+
+   for(x = Min_x; x <= Max_x; x++) S >> Val(x);
+
+   S.close();
+
+   return 1;
+}
+
+
+template <class VType>
+short Vector<VType>::Read_Binary_File(const char *FileName)
+{
+   FILE *fp;
+   long x;
+
+   if(!(fp = fopen(FileName, "r+b"))) return FALSE;
+
+   fread(&Min_x, sizeof(short), 1, fp);
+   fread(&Max_x, sizeof(short), 1, fp);
+
+   Allocate_Memory();
+
+   for(x = Min_x; x <= Max_x; x++) fread(Element(x), sizeof(VType), 1, fp);
+
+   fclose(fp);
+
+   return 1;
+}
+
+
+template <class VType>
+ostream& operator <<(ostream& Out, Vector<VType>& V)
+{
+   long x;
+
+   Out << setw(6) << V.Get_Min_x() << setw(6) << V.Get_Max_x() << endl;
+
+   for(x = V.Get_Min_x(); x <= V.Get_Max_x(); x++) Out << "\n" << setw(15) << V.Val(x);
+
+   return Out;
+}
+
+
+template <class VType>
+istream& operator >>(istream& In, Vector<VType>& V)
+{
+   long x, Min_x, Max_x;
+
+   In >> Min_x >> Max_x;
+
+   V.Create(Min_x, Max_x);
+
+   for(x = Min_x; x <= Max_x; x++) In >> V.Val(x);
+
+   return In;
+}
+
+
+template <class VType>
+short Vector<VType>::Write_File(const char *FileName)
+{
+   long x;
+   ofstream S;
+
+   S.open(FileName);
+
+   if(!S) return FALSE;
+
+   S << setw(6) << Min_x << setw(6) << Max_x << setw(6) << endl;
+
+   for(x = Min_x; x <= Max_x; x++) S << "\n" << setw(15) << Val(x);
+
+   S.close();
+
+   return 1;
+}
+
+
+template <class VType>
+short Vector<VType>::Write_Binary_File(const char *FileName)
+{
+   FILE *fp;
+   long x;
+
+   if(!(fp = fopen(FileName, "w+b"))) return FALSE;
+
+   fwrite(&Min_x, sizeof(long), 1, fp);
+   fwrite(&Max_x, sizeof(long), 1, fp);
+
+   for(x = Min_x; x <= Max_x; x++) fwrite(Element(x), sizeof(VType), 1, fp);
+
+   fclose(fp);
+
+   return 1;
+}
+
+

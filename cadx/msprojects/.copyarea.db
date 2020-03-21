@@ -1,0 +1,25 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\msprojects
+2
+15
+c:MakeTemplate|2|0|0|0|89cce8b3e6dc4481a380a5fd992f42f7|0
+9:IcdSegApp|2|0|0|0|4189ad2e7bb4475eb1957de979af4981|0
+7:Convert|2|0|0|0|b3834908426d4922852366fa9ce191e1|0
+6:IcdApp|2|0|0|0|7ff5024aab6440e2b994cd809f4c3511|0
+f:FeatureAnalysis|2|0|0|0|1dfa5981c3344bd0ad65cd58152bc58c|0
+5:ccICD|2|0|0|0|2f282f01081541d8914a06e53a708295|0
+d:ClassifierApp|2|0|0|0|60c00bbf9a2040e6a075afb161f6572f|0
+5:Canny|2|0|0|0|6fb511ff8f2e4da79f8f628f056c04d9|0
+b:ChestCadApp|2|0|0|0|f40e533ed8ff4f728c345b068f3fb151|0
+f:CalcFeaturesApp|2|0|0|0|fb78f3d770064c8388cfa8f1f0432491|0
+c:AnnotateApp2|2|0|0|0|1a39a9519d614953b3dd010aea344303|0
+3:LVQ|2|0|0|0|ea036bc1c00f42baaebeb23e4e192b48|0
+e:RoiAnalysisApp|2|0|0|0|0099decddf6d4361a6b9f854f9aa646b|0
+8:Annotate|2|0|0|0|abfb10c3d80b4c4b96a9fc4b760aa8de|0
+b:LungMaskApp|2|0|0|0|250347f0b7f84675ab8a85a5db05eb6d|0
+4:Cadx|2|0|0|0|0fce3f329eb74ddf80b625fd921b539c|0
+d:ProcessingApp|2|0|0|0|9873542e5f184a828b6f6b415f9932c5|0
+4:Test|2|0|0|0|8ef8fb53f8e4433d9c190b706097a6fa|0
+13:CalcFeaturesListApp|2|0|0|0|228cbc1167e54927a3a946d3751c7423|0
+a:MakeFTRApp|2|0|0|0|ee881092c9a44427984931ce48dce35c|0
+8:rollball|2|0|0|0|f3d5e18a3e4b4ad1b0f10eb4a5077506|0

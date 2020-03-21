@@ -1,0 +1,18 @@
+#!/bin/tcsh
+#
+# convert_can1_to_can11 : Convert a .can file from version 1.0 of the CAN file format
+#                         to version 1.1
+#
+# usage:
+# convert_can1_to_can11 in_can_file > out_can_file
+#
+# This script processes a version 1.0 can file in_can_file and outputs
+# a version 1.1 can file (out_can_file). It accomplishes this
+# by adding the groundtruth:, probability:, endHeader:, and endCandidate:
+# fields to the can file.
+#
+# See convert_can1_to_can11_files to run this script on multiple can files at once.
+#
+
+cat $1 |\
+awk '$1 == "candidateIndex:" && $2 != 0 { print "endCandidate:"; } $1=="candidateIndex:" { print $0; print "groundtruth: unknown"; print "probability: 0"; } $1 != "candidateIndex:" && $1 != "flabels:" && $1 != "#^CAN" { print $0; } $1 == "flabels:" { print $0; print "endHeader:" } $1 == "#^CAN" { $2 = "V1.1"; print $0; } END { print "endCandidate:" }'

@@ -1,0 +1,61 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Convert"=..\Convert\Convert.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    Convert
+    ..\Convert
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "IcdSegApp"=..\IcdSegApp\IcdSegApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    IcdSegApp
+    ..\IcdSegApp
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LungMaskApp"=.\LungMaskApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

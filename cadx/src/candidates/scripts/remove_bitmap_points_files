@@ -1,0 +1,20 @@
+#!/bin/tcsh
+#
+# remove_bitmap_points_files : Removes the bitmap coordinates from a directory
+#                              of .can files.
+#
+# usage:
+# remove_bitmap_points_files input_directory output_directory
+#
+# This script runs remove_bitmap_points on all can files in directory in_directory,
+# placing the output of each run in out_directory. See remove_bitmap_points for
+# more information.
+#
+
+foreach i ( $1/*.can )
+
+echo $i 
+remove_bitmap_points $i > $2/`basename $i`
+
+
+end

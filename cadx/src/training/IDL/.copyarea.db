@@ -1,0 +1,10 @@
+ClearCase CopyAreaDB|4
+vob\ISTL\cadx\src\training\IDL
+2
+6
+14:FeatureSelection.prj|1|1047f9af71e|800|dfeab635|95d523bb845b4826bd7ba8379f286f9e|0
+a:can_io.pro|1|1047f9af7c8|3676|58a4eab|885bf88601de4369921d3e7f6a28e267|0
+17:displaye_ccad_image.pro|1|1047f9afa21|5fac|8607ad23|ffab27567d794e1188911b50cc913175|0
+1e:plotchestcadclassification.pro|1|1047f9b01f4|328af|a8d81748|31abcbc8507141d2ac78f96159870f9f|0
+a:hit_io.pro|1|1047f9afafd|4ebc|60db146e|9ef7d33e8a3547b5ad8993723e18b1d5|0
+10:detection_io.pro|1|1047f9af8b8|168e|5d24cf6d|d6addda0a49049b1ad747d4d00ec2fdb|0

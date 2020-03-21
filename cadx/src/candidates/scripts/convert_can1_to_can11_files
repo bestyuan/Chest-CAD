@@ -1,0 +1,20 @@
+#!/bin/tcsh
+#
+# convert_can1_to_can11_files : Converts a can file in version 1.0 of the can file format
+#                               to version 1.1.
+#
+# usage:
+# convert_can1_to_can11 in_directory out_directory
+#
+# This script runs convert_can1_to_can11 on all can files in directory in_directory,
+# placing the output of each run in out_directory. See convert_can1_to_can11 for
+# more information.
+#
+
+foreach i ( $1/*.can )
+
+echo $i 
+
+convert_can1_to_can11 $i > $2/`basename $i`
+
+end

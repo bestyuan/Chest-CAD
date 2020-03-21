@@ -1,0 +1,21 @@
+#!/bin/tcsh
+#
+# change_feature_count_files : Truncate number of features to max_count, for a directory
+#                              of .can files.
+#
+# usage:
+# change_feature_count in_directory out_directory max_count
+#
+# This script runs change_feature_count on all can files in directory in_directory,
+# placing the output of each run in out_directory. See change_feature_count for
+# more information.
+#
+
+echo here
+foreach i ( $1/*.can )
+
+echo $i 
+change_feature_count $i $3 > $2/`basename $i`
+
+
+end
